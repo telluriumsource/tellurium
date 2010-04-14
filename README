@@ -1,12 +1,12 @@
                         README
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
 
              Tellurium Team (TelluriumSource@Gmail.com)
 
                    (http://code.google.com/p/aost)
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 
 The Tellurium Automated Testing Framework (Tellurium) is a UI module-based automated testing framework for web
 applications. The UI module is a collection of UI elements you group together. Usually, the UI module represents
