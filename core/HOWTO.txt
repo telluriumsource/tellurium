@@ -1,0 +1,37 @@
+
+Before build the project using the ant script, please first change
+the javahome in the build.properties file, i.e., replace the following
+line
+
+javahome = /usr/java/current
+
+with the java home on your own machine.
+
+The run the ant tasks for 
+
+1) To clean build files
+
+  ant clean
+
+2) To generate the artifact (jar file will be under the dist/ directory)
+
+  ant dist
+
+3) To compile tests
+
+  ant compile-test
+
+
+4) To run dsl in Linux (first run ant compile-test before run the dsl tests)
+
+./rundsl.sh src/test/resources/example/dsl/DataDrivenGoogleBookListCodeHosting.dsl 
+
+./rundsl.sh src/test/resources/example/dsl/GoogleStartPage.dsl 
+
+./rundsl.sh src/test/resources/example/dsl/DataDrivenGoogleStartPage.dsl
+
+5) Use Maven, you need to run
+
+mvn test
+
+

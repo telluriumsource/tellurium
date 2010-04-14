@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Tellurium Test Page</title>
+    <script src="js/selenium-mock.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/jquery-1.4.2.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/json2.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/utils.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-logging.js"></script> 
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-api.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-cache.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-extensions.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-selector.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uibasic.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-udl.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uiobj.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uimodule.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uisnapshot.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uialg.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uiextra.js"> </script>    
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium.js"></script>
+    <script src="js/tellurium-test.js"></script>
+    <script type="text/javascript">
+        teJQuery(document).ready(function() {
+            var testcase = new TelluriumTestCase();
+            testcase.testExpandUiModule();
+        });
+    </script>
+</head>
+<body>
+<div>
+    <input id="loginForm:name" type="text"/>
+    <input id="loginForm:password" type="password"/>
+    <a id="loginForm:loginButton"/>
+</div>
+<form action="/nextgen/advancedSearch.seam" method="post">
+    <input id="qrf:quickSearchTerm" type="text"/>
+    <input id="qrf:quickSearchButton" type="submit"/>
+</form>
+<table>
+    <tbody>
+    <tr>
+        <td>
+            <input id="cif:emailAddressDecorator:email" type="text" name="cif:emailAddressDecorator:email"/>
+        </td>
+        <a id="qrForm:innie"/>
+        <a id="qrForm:outie"/>
+        <td>
+            <a id="mailto" url="js/tellurium-test.js"/>
+        </td>
+
+    </tr>
+    </tbody>
+
+</table>
+
+<a id="mailToo" url="http://localhost:4444/selenium-server/core/scripts/tellurium.js"/>
+
+<div>
+    <input type="button" value="Save" name="cif:customerInfoSaveButton" id="cif:customerInfoSaveButton"
+           class="btn saveButton"/>
+</div>
+
+</body>
+</html>

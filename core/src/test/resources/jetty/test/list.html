@@ -1,0 +1,6446 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+
+
+
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = "aac36bcfbe6e6d5e2a62b58aed80e967";
+ 
+ 
+ var logged_in_user_email = "John.Jian.Fang@gmail.com";
+ 
+ </script>
+ 
+ 
+ <title>Issues - 
+ aost -
+ 
+ Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <link type="text/css" rel="stylesheet" href="list_files/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="list_files/ph_list.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="http://code.google.com/feeds/p/aost/issueupdates/basic">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/1676283234471223295/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+<script type="text/javascript" src="list_files/ga.js"></script>
+    <script src="js/selenium-mock.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/jquery-1.4.2.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/json2.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/utils.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-logging.js"></script> 
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-api.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-cache.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-extensions.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-selector.js"></script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uibasic.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-udl.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uiobj.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uimodule.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uisnapshot.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uialg.js"> </script>
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uiextra.js"> </script>    
+    <script src="http://localhost:4444/selenium-server/core/scripts/tellurium.js"></script>
+    <script src="js/tellurium-test.js"></script>
+    <script type="text/javascript">
+        teJQuery(document).ready(function() {
+            var testcase = new TelluriumTestCase();
+            testcase.testTelluriumIssueModule();
+        });
+    </script>
+</head>
+<body class="t3">
+ <div id="gaia">
+ 
+ <span>
+ 
+ <b>John.Jian.Fang@gmail.com</b>
+ 
+ 
+ | <a linkindex="0" href="http://code.google.com/u/John.Jian.Fang/" id="projects-dropdown" onclick="return false;">My favorites</a><img class="menuIcon off" id="menuIcon-projects-dropdown" src="list_files/cleardot.gif" height="14" width="14">
+ 
+ | <a linkindex="1" href="http://code.google.com/u/John.Jian.Fang/" onclick="_CS_click('/gb/ph/profile');" title="Profile, Updates, and Settings">Profile</a>
+ | <a href="https://www.google.com/accounts/Logout?continue=http%3A%2F%2Fcode.google.com%2Fp%2Faost%2Fissues%2Flist" onclick="_CS_click('/gb/ph/signout');">Sign out</a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px;"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+ <table style="margin: 20px 0px 0px; padding: 0px; width: 100%;" cellpadding="0" cellspacing="0">
+ <tbody><tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align: center;">
+ <a linkindex="2" href="http://code.google.com/p/aost/">
+ 
+ 
+ 
+ <img src="list_files/logo" alt="Logo">
+ 
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.8em;">
+ 
+ <div id="pname" style="margin: 0px 0px -3px;">
+ <a linkindex="3" href="http://code.google.com/p/aost/" style="text-decoration: none; color: rgb(0, 0, 0);">aost</a>
+ </div>
+ 
+ <div id="psum">
+ <i><a linkindex="4" id="project_summary_link" href="http://code.google.com/p/aost/" style="text-decoration: none; color: rgb(0, 0, 0);">Tellurium Automated Testing Framework</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space: nowrap; text-align: right;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q">
+ <input name="projectsearch" value="Search projects" type="submit">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+
+
+ 
+<table id="mt" width="100%" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+ <th onclick="if (!cancelBubble) _go('/p/aost/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a linkindex="5" onclick="cancelBubble=true;" href="http://code.google.com/p/aost/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/aost/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a linkindex="6" onclick="cancelBubble=true;" href="http://code.google.com/p/aost/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/aost/wiki/UserGuide070Introduction?tm=6');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a linkindex="7" onclick="cancelBubble=true;" href="http://code.google.com/p/aost/wiki/UserGuide070Introduction?tm=6">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/aost/issues/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a linkindex="8" onclick="cancelBubble=true;" href="http://code.google.com/p/aost/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/aost/source/checkout');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a linkindex="9" onclick="cancelBubble=true;" href="http://code.google.com/p/aost/source/checkout">Source</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/aost/admin');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a linkindex="10" onclick="cancelBubble=true;" href="http://code.google.com/p/aost/admin">Administer</a>
+ </div>
+ </div>
+ </th>
+ <td width="100%">&nbsp;</td>
+ </tr>
+</tbody></table>
+<table class="st" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+ 
+ 
+ 
+ 
+ 
+ <td>
+ <div class="issueList">
+<div class="isf">
+ 
+ 
+ <span class="inIssueEntry">
+ <a linkindex="11" href="http://code.google.com/p/aost/issues/entry">New issue</a>
+ </span> |
+ 
+ <span class="inIssueList">
+ <span>Search</span>
+ <form action="list" method="GET" style="display: inline;">
+ <select id="can" name="can" style="font-size: 92%;">
+ 
+<option disabled="disabled">Search within:</option>
+<option value="1">&nbsp;All issues</option>
+<option value="2" selected="selected">&nbsp;Open issues</option>
+
+ <option value="3">&nbsp;Open and owned by me</option>
+ <option value="4">&nbsp;Open and reported by me</option>
+ <option value="5">&nbsp;Open and starred by me</option>
+
+<option value="6">&nbsp;New issues</option>
+<option value="7">&nbsp;Issues to verify</option>
+
+ </select>
+ <span>for</span>
+ <span id="qq"><input size="32" id="q" name="q" style="font-size: 92%;" type="text"></span>
+ 
+ <span id="search_colspec"><input name="colspec" value="ID Type Status Priority Milestone Owner Summary" type="hidden"></span>
+ 
+ 
+ 
+ <input name="cells" value="tiles" type="hidden">
+ <input value="Search" style="font-size: 92%;" type="submit">
+ </form>
+ </span> |
+ <span class="inIssueAdvSearch">
+ <a linkindex="12" href="http://code.google.com/p/aost/issues/advsearch">Advanced search</a>
+ </span> |
+ <span class="inIssueSearchTips">
+ <a linkindex="13" href="http://code.google.com/p/aost/issues/searchtips">Search tips</a>
+ </span>
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="bevel-right" height="4" valign="top" align="right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</tbody></table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol">
+
+ 
+<!-- IE -->
+
+
+
+
+<script type="text/javascript">
+function _showBelow(){}
+function _toggleStar(){}
+function _rowRolloverOn(){}
+function _rowRolloverOff(){}
+function _goIssue(){}
+function _goFile(){}
+</script>
+
+<style type="text/css">
+ td.rowwidgets { padding: 2px 2px 0 7px; }
+ .cursor_on td.rowwidgets {
+ 
+ background-image: url(http://code.google.com/images/show-arrow.gif);
+ background-repeat: no-repeat;
+ background-position: 2px;
+ }
+ .results td.id { text-align:right }
+</style>
+<div id="colcontrol">
+<div class="bubble_bg">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner" id="bub">
+ 
+ <div class="bub-top">
+ <div style="float: right; margin-left: 2em;">
+ <b>List</b> |
+ <a linkindex="14" href="http://code.google.com/p/aost/issues/list?can=2&amp;q=&amp;colspec=ID+Type+Status+Priority+Milestone+Owner+Summary&amp;sort=&amp;x=&amp;y=&amp;cells=tiles&amp;mode=grid">Grid</a>
+ </div>
+ 
+ 
+ <div class="pagination">
+ 
+ 1 - 58
+ of 58
+ 
+ </div>
+ 
+
+
+ 
+ <span style="font-size: 95%;">Select:
+ <a href="javascript:_selectAllIssues()">All</a>
+ <a href="javascript:_selectNoneIssues()">None</a>
+ </span>
+ &nbsp;&nbsp;
+ <select id="moreactions" onchange="_MoreActions_onchange(this)" class="drop-down-bub">
+ <option value="moreactions" disabled="disabled" selected="selected">Actions...</option>
+ <option value="colspec">Change columns...</option>
+ <option value="bulk">Bulk edit...</option>
+ </select>
+ 
+ &nbsp; &nbsp;
+ <form id="colspecform" action="list" method="GET" autocomplete="off" style="display: inline;">
+ <input name="can" value="2" type="hidden">
+ <input name="q" value="" type="hidden">
+ <input name="sort" value="" type="hidden">
+ <span id="columnspec" style="display: none;"><span style="font-size: 95%;">Columns:
+ </span><span id="colspec_field"><input size="60" style="font-size: 80%;" name="colspec" value="ID Type Status Priority Milestone Owner Summary" type="text"></span>&nbsp;
+ <input style="font-size: 80%;" name="nobtn" value="Update" type="submit">&nbsp;
+ 
+ </span>
+ </form>
+</div>
+
+ 
+ <table class="results" id="resultstable" width="100%" border="0" cellpadding="2" cellspacing="0">
+ <tbody id="cursorarea">
+ 
+ <tr id="headingrow"><th style="border-left: 0pt none;"> &nbsp; </th>
+ 
+ 
+ 
+ <th class="col_0" onclick="_showBelow('pop_0',this)" nowrap="nowrap"><a href="#" style="text-decoration: none;">ID <span class="indicator">▼</span></a></th>
+ 
+ 
+ 
+ 
+ 
+ <th class="col_1" onclick="_showBelow('pop_1',this)" nowrap="nowrap"><a href="#" style="text-decoration: none;">Type <span class="indicator">▼</span></a></th>
+ 
+ 
+ 
+ 
+ 
+ <th class="col_2" onclick="_showBelow('pop_2',this)" nowrap="nowrap"><a href="#" style="text-decoration: none;">Status <span class="indicator">▼</span></a></th>
+ 
+ 
+ 
+ 
+ 
+ <th class="col_3" onclick="_showBelow('pop_3',this)" nowrap="nowrap"><a href="#" style="text-decoration: none;">Priority <span class="indicator">▼</span></a></th>
+ 
+ 
+ 
+ 
+ 
+ <th class="col_4" onclick="_showBelow('pop_4',this)" nowrap="nowrap"><a href="#" style="text-decoration: none;">Milestone <span class="indicator">▼</span></a></th>
+ 
+ 
+ 
+ 
+ 
+ <th class="col_5" onclick="_showBelow('pop_5',this)" nowrap="nowrap"><a href="#" style="text-decoration: none;">Owner <span class="indicator">▼</span></a></th>
+ 
+ 
+ 
+ 
+ <th class="col_6" style="border-left: 0pt none;">&nbsp;</th>
+ <th class="col_6" id="summaryheading" onclick="_showBelow('pop_6',this)" nowrap="nowrap" width="100%"><a href="#" style="text-decoration: none;">Summary + Labels <span class="indicator">▼</span></a></th>
+ 
+ 
+ <th onclick="return _showBelow('pop__dot',this)" style="width: 3ex;"><a linkindex="15" href="#columnprefs" class="dotdotdot">...</a></th>
+</tr>
+
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_99" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',99)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="16" href="http://code.google.com/p/aost/issues/detail?id=99">99</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(99)"><a linkindex="17" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=99">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(99)"><a linkindex="18" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=99">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(99)"><a linkindex="19" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=99">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(99)"><a linkindex="20" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=99">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(99)"><a linkindex="21" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=99" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(99);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(99)" width="100%"><a linkindex="22" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=99">
+ 
+ Design an inference engine in TrUMP to aggregate UI elements to UI templates
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_100" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',100)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="23" href="http://code.google.com/p/aost/issues/detail?id=100">100</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(100)"><a linkindex="24" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=100">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(100)"><a linkindex="25" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=100">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(100)"><a linkindex="26" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=100">
+ 
+ Critical
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(100)"><a linkindex="27" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=100">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(100)"><a linkindex="28" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=100" style="white-space: nowrap;">
+ 
+ vivekmongolu
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(100);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(100)" width="100%"><a linkindex="29" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=100">
+ 
+ Add support to record popup diaglog or window in TrUMP 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_106" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',106)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="30" href="http://code.google.com/p/aost/issues/detail?id=106">106</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(106)"><a linkindex="31" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=106">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(106)"><a linkindex="32" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=106">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(106)"><a linkindex="33" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=106">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(106)"><a linkindex="34" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=106">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(106)"><a linkindex="35" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=106" style="white-space: nowrap;">
+ 
+ vivekmongolu
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(106);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(106)" width="100%"><a linkindex="36" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=106">
+ 
+ Need to have the option to hide the log window in Trump 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_116" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',116)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="37" href="http://code.google.com/p/aost/issues/detail?id=116">116</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(116)"><a linkindex="38" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=116">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(116)"><a linkindex="39" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=116">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(116)"><a linkindex="40" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=116">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(116)"><a linkindex="41" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=116">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(116)"><a linkindex="42" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=116" style="white-space: nowrap;">
+ 
+ vivekmongolu
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(116);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(116)" width="100%"><a linkindex="43" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=116">
+ 
+ Seems the position attribute cannot be removed once selected in TrUMP, Fix in 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_118" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',118)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="44" href="http://code.google.com/p/aost/issues/detail?id=118">118</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(118)"><a linkindex="45" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=118">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(118)"><a linkindex="46" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=118">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(118)"><a linkindex="47" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=118">
+ 
+ Critical
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(118)"><a linkindex="48" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=118">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(118)"><a linkindex="49" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=118" style="white-space: nowrap;">
+ 
+ vivekmongolu
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(118);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(118)" width="100%"><a linkindex="50" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=118">
+ 
+ Add Frame/IFrame support for TrUMP in TrUMP 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_138" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',138)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="51" href="http://code.google.com/p/aost/issues/detail?id=138">138</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(138)"><a linkindex="52" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=138">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(138)"><a linkindex="53" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=138">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(138)"><a linkindex="54" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=138">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(138)"><a linkindex="55" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=138">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(138)"><a linkindex="56" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=138" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(138);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(138)" width="100%"><a linkindex="57" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=138">
+ 
+ Add Tellurium Maven plugin in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_142" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',142)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="58" href="http://code.google.com/p/aost/issues/detail?id=142">142</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(142)"><a linkindex="59" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=142">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(142)"><a linkindex="60" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=142">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(142)"><a linkindex="61" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=142">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(142)"><a linkindex="62" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=142">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(142)"><a linkindex="63" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=142" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(142);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(142)" width="100%"><a linkindex="64" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=142">
+ 
+ design an algorithm to optimize the selected attributes in Trump 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_144" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',144)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="65" href="http://code.google.com/p/aost/issues/detail?id=144">144</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(144)"><a linkindex="66" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=144">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(144)"><a linkindex="67" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=144">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(144)"><a linkindex="68" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=144">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(144)"><a linkindex="69" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=144">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(144)"><a linkindex="70" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=144" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(144);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(144)" width="100%"><a linkindex="71" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=144">
+ 
+ Support for XML test
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_145" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',145)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="72" href="http://code.google.com/p/aost/issues/detail?id=145">145</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(145)"><a linkindex="73" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=145">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(145)"><a linkindex="74" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=145">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(145)"><a linkindex="75" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=145">
+ 
+ Critical
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(145)"><a linkindex="76" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=145">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(145)"><a linkindex="77" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=145" style="white-space: nowrap;">
+ 
+ koryak
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(145);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(145)" width="100%"><a linkindex="78" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=145">
+ 
+ add script to check if Ajax response comes back in Engine 0.1.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_146" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',146)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="79" href="http://code.google.com/p/aost/issues/detail?id=146">146</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(146)"><a linkindex="80" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=146">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(146)"><a linkindex="81" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=146">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(146)"><a linkindex="82" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=146">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(146)"><a linkindex="83" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=146">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(146)"><a linkindex="84" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=146" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(146);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(146)" width="100%"><a linkindex="85" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=146">
+ 
+ automatically generate testing flow in Trump
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_152" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',152)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="86" href="http://code.google.com/p/aost/issues/detail?id=152">152</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(152)"><a linkindex="87" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=152">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(152)"><a linkindex="88" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=152">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(152)"><a linkindex="89" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=152">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(152)"><a linkindex="90" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=152">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(152)"><a linkindex="91" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=152" style="white-space: nowrap;">
+ 
+ matt.senter
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(152);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(152)" width="100%"><a linkindex="92" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=152">
+ 
+ Tellurium introduction video 
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_154" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',154)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="93" href="http://code.google.com/p/aost/issues/detail?id=154">154</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(154)"><a linkindex="94" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=154">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(154)"><a linkindex="95" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=154">
+ 
+ Started
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(154)"><a linkindex="96" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=154">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(154)"><a linkindex="97" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=154">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(154)"><a linkindex="98" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=154" style="white-space: nowrap;">
+ 
+ matt.senter
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(154);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(154)" width="100%"><a linkindex="99" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=154">
+ 
+ add Google Analytics Plugin for Nexus
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_181" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',181)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="100" href="http://code.google.com/p/aost/issues/detail?id=181">181</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(181)"><a linkindex="101" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=181">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(181)"><a linkindex="102" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=181">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(181)"><a linkindex="103" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=181">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(181)"><a linkindex="104" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=181">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(181)"><a linkindex="105" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=181" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(181);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(181)" width="100%"><a linkindex="106" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=181">
+ 
+ Add table index search using header in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_194" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',194)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="107" href="http://code.google.com/p/aost/issues/detail?id=194">194</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(194)"><a linkindex="108" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=194">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(194)"><a linkindex="109" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=194">
+ 
+ New
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(194)"><a linkindex="110" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=194">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(194)"><a linkindex="111" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=194">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(194)"><a linkindex="112" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=194" style="white-space: nowrap;">
+ 
+ rsrams
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(194);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(194)" width="100%"><a linkindex="113" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=194">
+ 
+ update wiki documents for 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_196" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',196)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="114" href="http://code.google.com/p/aost/issues/detail?id=196">196</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(196)"><a linkindex="115" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=196">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(196)"><a linkindex="116" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=196">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(196)"><a linkindex="117" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=196">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(196)"><a linkindex="118" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=196">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(196)"><a linkindex="119" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=196" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(196);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(196)" width="100%"><a linkindex="120" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=196">
+ 
+ Add HtmlUnit support for headless tests
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_200" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',200)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="121" href="http://code.google.com/p/aost/issues/detail?id=200">200</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(200)"><a linkindex="122" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=200">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(200)"><a linkindex="123" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=200">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(200)"><a linkindex="124" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=200">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(200)"><a linkindex="125" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=200">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(200)"><a linkindex="126" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=200" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(200);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(200)" width="100%"><a linkindex="127" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=200">
+ 
+ Create Telluirum Widget Archetype in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_201" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',201)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="128" href="http://code.google.com/p/aost/issues/detail?id=201">201</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(201)"><a linkindex="129" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=201">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(201)"><a linkindex="130" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=201">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(201)"><a linkindex="131" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=201">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(201)"><a linkindex="132" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=201">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(201)"><a linkindex="133" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=201" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(201);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(201)" width="100%"><a linkindex="134" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=201">
+ 
+ Tellurium Widget re-visit in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_205" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',205)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="135" href="http://code.google.com/p/aost/issues/detail?id=205">205</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(205)"><a linkindex="136" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=205">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(205)"><a linkindex="137" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=205">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(205)"><a linkindex="138" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=205">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(205)"><a linkindex="139" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=205">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(205)"><a linkindex="140" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=205" style="white-space: nowrap;">
+ 
+ ajay.ravichandran
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(205);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(205)" width="100%"><a linkindex="141" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=205">
+ 
+ Refactor Selenium core exception to include error code in 0.1.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_207" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',207)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="142" href="http://code.google.com/p/aost/issues/detail?id=207">207</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(207)"><a linkindex="143" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=207">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(207)"><a linkindex="144" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=207">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(207)"><a linkindex="145" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=207">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(207)"><a linkindex="146" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=207">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(207)"><a linkindex="147" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=207" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(207);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(207)" width="100%"><a linkindex="148" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=207">
+ 
+ Move waitForElementPresent to Engine in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_215" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',215)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="149" href="http://code.google.com/p/aost/issues/detail?id=215">215</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(215)"><a linkindex="150" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=215">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(215)"><a linkindex="151" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=215">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(215)"><a linkindex="152" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=215">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(215)"><a linkindex="153" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=215">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(215)"><a linkindex="154" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=215" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(215);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(215)" width="100%"><a linkindex="155" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=215">
+ 
+ Add advanced uid schema such as "odd" and "even" for List and Table in Core 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_217" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',217)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="156" href="http://code.google.com/p/aost/issues/detail?id=217">217</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(217)"><a linkindex="157" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=217">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(217)"><a linkindex="158" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=217">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(217)"><a linkindex="159" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=217">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(217)"><a linkindex="160" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=217">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(217)"><a linkindex="161" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=217" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(217);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(217)" width="100%"><a linkindex="162" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=217">
+ 
+ implement "click at" using jQuery in Engine 0.1.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_218" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',218)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="163" href="http://code.google.com/p/aost/issues/detail?id=218">218</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(218)"><a linkindex="164" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=218">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(218)"><a linkindex="165" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=218">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(218)"><a linkindex="166" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=218">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(218)"><a linkindex="167" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=218">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(218)"><a linkindex="168" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=218" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(218);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(218)" width="100%"><a linkindex="169" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=218">
+ 
+ implement right mouse down etc using jQuery in Engine 0.1.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_223" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',223)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="170" href="http://code.google.com/p/aost/issues/detail?id=223">223</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(223)"><a linkindex="171" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=223">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(223)"><a linkindex="172" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=223">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(223)"><a linkindex="173" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=223">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(223)"><a linkindex="174" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=223">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(223)"><a linkindex="175" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=223" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(223);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(223)" width="100%"><a linkindex="176" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=223">
+ 
+ Automatically add respond attribute of "click" in TrUMP 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_228" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',228)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="177" href="http://code.google.com/p/aost/issues/detail?id=228">228</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(228)"><a linkindex="178" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=228">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(228)"><a linkindex="179" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=228">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(228)"><a linkindex="180" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=228">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(228)"><a linkindex="181" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=228">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(228)"><a linkindex="182" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=228" style="white-space: nowrap;">
+ 
+ matt.senter
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(228);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(228)" width="100%"><a linkindex="183" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=228">
+ 
+ Upgrade Tellurium to use latest Maven in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_231" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',231)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="184" href="http://code.google.com/p/aost/issues/detail?id=231">231</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(231)"><a linkindex="185" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=231">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(231)"><a linkindex="186" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=231">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(231)"><a linkindex="187" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=231">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(231)"><a linkindex="188" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=231">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(231)"><a linkindex="189" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=231" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(231);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(231)" width="100%"><a linkindex="190" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=231">
+ 
+ Should automatically include UrlLink in Trump 0.2.0 
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_234" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',234)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="191" href="http://code.google.com/p/aost/issues/detail?id=234">234</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(234)"><a linkindex="192" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=234">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(234)"><a linkindex="193" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=234">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(234)"><a linkindex="194" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=234">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(234)"><a linkindex="195" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=234">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(234)"><a linkindex="196" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=234" style="white-space: nowrap;">
+ 
+ gigix1980
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(234);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(234)" width="100%"><a linkindex="197" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=234">
+ 
+ remove unneeded code from Selenium core in Engine 0.1.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_235" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',235)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="198" href="http://code.google.com/p/aost/issues/detail?id=235">235</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(235)"><a linkindex="199" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=235">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(235)"><a linkindex="200" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=235">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(235)"><a linkindex="201" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=235">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(235)"><a linkindex="202" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=235">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(235)"><a linkindex="203" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=235" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(235);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(235)" width="100%"><a linkindex="204" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=235">
+ 
+ Add headless Selenium server support in Tellurium Core 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_238" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_off.gif" onclick="_toggleStar(this,'aost',238)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="205" href="http://code.google.com/p/aost/issues/detail?id=238">238</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(238)"><a linkindex="206" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=238">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(238)"><a linkindex="207" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=238">
+ 
+ New
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(238)"><a linkindex="208" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=238">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(238)"><a linkindex="209" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=238">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(238)"><a linkindex="210" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=238" style="white-space: nowrap;">
+ 
+ haroonzone
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(238);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(238)" width="100%"><a linkindex="211" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=238">
+ 
+ Use the same browser/selenium instance across multiple tests in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_239" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',239)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="212" href="http://code.google.com/p/aost/issues/detail?id=239">239</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(239)"><a linkindex="213" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=239">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(239)"><a linkindex="214" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=239">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(239)"><a linkindex="215" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=239">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(239)"><a linkindex="216" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=239">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(239)"><a linkindex="217" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=239" style="white-space: nowrap;">
+ 
+ haroonzone
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(239);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(239)" width="100%"><a linkindex="218" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=239">
+ 
+ create our own html source to test individual UI elements in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_244" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',244)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="219" href="http://code.google.com/p/aost/issues/detail?id=244">244</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(244)"><a linkindex="220" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=244">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(244)"><a linkindex="221" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=244">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(244)"><a linkindex="222" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=244">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(244)"><a linkindex="223" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=244">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(244)"><a linkindex="224" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=244" style="white-space: nowrap;">
+ 
+ ajay.ravichandran
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(244);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(244)" width="100%"><a linkindex="225" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=244">
+ 
+ Enable/disable logging through Tellurium API in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_249" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',249)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="226" href="http://code.google.com/p/aost/issues/detail?id=249">249</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(249)"><a linkindex="227" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=249">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(249)"><a linkindex="228" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=249">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(249)"><a linkindex="229" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=249">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(249)"><a linkindex="230" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=249">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(249)"><a linkindex="231" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=249" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(249);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(249)" width="100%"><a linkindex="232" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=249">
+ 
+ seems the direct attribute is not correct sometimes in Trump, Fix in Trump 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_250" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',250)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="233" href="http://code.google.com/p/aost/issues/detail?id=250">250</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(250)"><a linkindex="234" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=250">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(250)"><a linkindex="235" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=250">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(250)"><a linkindex="236" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=250">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(250)"><a linkindex="237" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=250">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(250)"><a linkindex="238" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=250" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(250);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(250)" width="100%"><a linkindex="239" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=250">
+ 
+ UI type update in Trump 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_254" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',254)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="240" href="http://code.google.com/p/aost/issues/detail?id=254">254</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(254)"><a linkindex="241" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=254">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(254)"><a linkindex="242" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=254">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(254)"><a linkindex="243" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=254">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(254)"><a linkindex="244" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=254">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(254)"><a linkindex="245" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=254" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(254);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(254)" width="100%"><a linkindex="246" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=254">
+ 
+ Add jQuery selector to Trump 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_257" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',257)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="247" href="http://code.google.com/p/aost/issues/detail?id=257">257</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(257)"><a linkindex="248" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=257">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(257)"><a linkindex="249" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=257">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(257)"><a linkindex="250" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=257">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(257)"><a linkindex="251" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=257">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(257)"><a linkindex="252" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=257" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(257);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(257)" width="100%"><a linkindex="253" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=257">
+ 
+ Create a 2-D UI object to support index in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_258" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',258)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="254" href="http://code.google.com/p/aost/issues/detail?id=258">258</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(258)"><a linkindex="255" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=258">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(258)"><a linkindex="256" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=258">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(258)"><a linkindex="257" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=258">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(258)"><a linkindex="258" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=258">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(258)"><a linkindex="259" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=258" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(258);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(258)" width="100%"><a linkindex="260" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=258">
+ 
+ Add alias to reference object in UI templates in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_260" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',260)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="261" href="http://code.google.com/p/aost/issues/detail?id=260">260</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(260)"><a linkindex="262" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=260">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(260)"><a linkindex="263" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=260">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(260)"><a linkindex="264" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=260">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(260)"><a linkindex="265" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=260">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(260)"><a linkindex="266" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=260" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(260);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(260)" width="100%"><a linkindex="267" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=260">
+ 
+ Add matched, closest, and target elements when user customizes UI for Trump 0.2.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_266" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',266)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="268" href="http://code.google.com/p/aost/issues/detail?id=266">266</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(266)"><a linkindex="269" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=266">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(266)"><a linkindex="270" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=266">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(266)"><a linkindex="271" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=266">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(266)"><a linkindex="272" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=266">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(266)"><a linkindex="273" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=266" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(266);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(266)" width="100%"><a linkindex="274" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=266">
+ 
+ add support for index range in UI template definition in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_270" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',270)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="275" href="http://code.google.com/p/aost/issues/detail?id=270">270</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(270)"><a linkindex="276" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=270">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(270)"><a linkindex="277" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=270">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(270)"><a linkindex="278" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=270">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(270)"><a linkindex="279" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=270">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(270)"><a linkindex="280" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=270" style="white-space: nowrap;">
+ 
+ haroonzone
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(270);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(270)" width="100%"><a linkindex="281" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=270">
+ 
+ File upload support in Tellurium in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_273" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',273)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="282" href="http://code.google.com/p/aost/issues/detail?id=273">273</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(273)"><a linkindex="283" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=273">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(273)"><a linkindex="284" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=273">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(273)"><a linkindex="285" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=273">
+ 
+ Critical
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(273)"><a linkindex="286" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=273">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(273)"><a linkindex="287" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=273" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(273);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(273)" width="100%"><a linkindex="288" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=273">
+ 
+ Prototype UID Description Language (UDL) in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_276" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',276)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="289" href="http://code.google.com/p/aost/issues/detail?id=276">276</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(276)"><a linkindex="290" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=276">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(276)"><a linkindex="291" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=276">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(276)"><a linkindex="292" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=276">
+ 
+ High
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(276)"><a linkindex="293" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=276">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(276)"><a linkindex="294" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=276" style="white-space: nowrap;">
+ 
+ vivekmongolu
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(276);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(276)" width="100%"><a linkindex="295" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=276">
+ 
+ update wiki documents for setting up Tellurium projects with IntelliJ, NetBeans, and Eclipse IDEs
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_280" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',280)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="296" href="http://code.google.com/p/aost/issues/detail?id=280">280</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(280)"><a linkindex="297" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=280">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(280)"><a linkindex="298" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=280">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(280)"><a linkindex="299" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=280">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(280)"><a linkindex="300" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=280">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(280)"><a linkindex="301" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=280" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(280);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(280)" width="100%"><a linkindex="302" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=280">
+ 
+ user requested to get back UI elements by their tag names
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_284" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',284)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="303" href="http://code.google.com/p/aost/issues/detail?id=284">284</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(284)"><a linkindex="304" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=284">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(284)"><a linkindex="305" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=284">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(284)"><a linkindex="306" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=284">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(284)"><a linkindex="307" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=284">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(284)"><a linkindex="308" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=284" style="white-space: nowrap;">
+ 
+ vivekmongolu
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(284);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(284)" width="100%"><a linkindex="309" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=284">
+ 
+ Create Tellurium web pages to test Tellurium objects
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_285" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',285)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="310" href="http://code.google.com/p/aost/issues/detail?id=285">285</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(285)"><a linkindex="311" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=285">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(285)"><a linkindex="312" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=285">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(285)"><a linkindex="313" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=285">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(285)"><a linkindex="314" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=285">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(285)"><a linkindex="315" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=285" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(285);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(285)" width="100%"><a linkindex="316" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=285">
+ 
+ support more frame locators other than name  
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_286" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',286)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="317" href="http://code.google.com/p/aost/issues/detail?id=286">286</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(286)"><a linkindex="318" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=286">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(286)"><a linkindex="319" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=286">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(286)"><a linkindex="320" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=286">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(286)"><a linkindex="321" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=286">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(286)"><a linkindex="322" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=286" style="white-space: nowrap;">
+ 
+ vivekmongolu
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(286);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(286)" width="100%"><a linkindex="323" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=286">
+ 
+ create Tellurium grails plugin
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_287" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',287)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="324" href="http://code.google.com/p/aost/issues/detail?id=287">287</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(287)"><a linkindex="325" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=287">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(287)"><a linkindex="326" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=287">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(287)"><a linkindex="327" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=287">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(287)"><a linkindex="328" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=287">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(287)"><a linkindex="329" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=287" style="white-space: nowrap;">
+ 
+ matt.senter
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(287);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(287)" width="100%"><a linkindex="330" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=287">
+ 
+ create Tellurium Hudson plugin
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_291" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',291)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="331" href="http://code.google.com/p/aost/issues/detail?id=291">291</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(291)"><a linkindex="332" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=291">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(291)"><a linkindex="333" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=291">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(291)"><a linkindex="334" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=291">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(291)"><a linkindex="335" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=291">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(291)"><a linkindex="336" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=291" style="white-space: nowrap;">
+ 
+ haroonzone
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(291);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(291)" width="100%"><a linkindex="337" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=291">
+ 
+ Create JAVA DOC for BaseDslContext and DslContext
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_292" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',292)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="338" href="http://code.google.com/p/aost/issues/detail?id=292">292</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(292)"><a linkindex="339" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=292">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(292)"><a linkindex="340" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=292">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(292)"><a linkindex="341" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=292">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(292)"><a linkindex="342" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=292">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(292)"><a linkindex="343" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=292" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(292);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(292)" width="100%"><a linkindex="344" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=292">
+ 
+ deleteAllVisibleCookies do not work in IE
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_293" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_off.gif" onclick="_toggleStar(this,'aost',293)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="345" href="http://code.google.com/p/aost/issues/detail?id=293">293</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(293)"><a linkindex="346" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=293">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(293)"><a linkindex="347" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=293">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(293)"><a linkindex="348" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=293">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(293)"><a linkindex="349" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=293">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(293)"><a linkindex="350" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=293" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(293);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(293)" width="100%"><a linkindex="351" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=293">
+ 
+ Add attribute partial matching to selectByLabel  in Engine 0.1.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_296" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',296)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="352" href="http://code.google.com/p/aost/issues/detail?id=296">296</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(296)"><a linkindex="353" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=296">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(296)"><a linkindex="354" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=296">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(296)"><a linkindex="355" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=296">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(296)"><a linkindex="356" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=296">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(296)"><a linkindex="357" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=296" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(296);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(296)" width="100%"><a linkindex="358" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=296">
+ 
+ externalize jetty server from Selenium server
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_299" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',299)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="359" href="http://code.google.com/p/aost/issues/detail?id=299">299</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(299)"><a linkindex="360" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=299">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(299)"><a linkindex="361" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=299">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(299)"><a linkindex="362" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=299">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(299)"><a linkindex="363" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=299">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(299)"><a linkindex="364" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=299" style="white-space: nowrap;">
+ 
+ hvram1
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(299);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(299)" width="100%"><a linkindex="365" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=299">
+ 
+ add fitnesse integration to Tellurium
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_300" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',300)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="366" href="http://code.google.com/p/aost/issues/detail?id=300">300</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(300)"><a linkindex="367" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=300">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(300)"><a linkindex="368" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=300">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(300)"><a linkindex="369" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=300">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(300)"><a linkindex="370" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=300">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(300)"><a linkindex="371" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=300" style="white-space: nowrap;">
+ 
+ hvram1
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(300);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ &nbsp;
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(300)" width="100%"><a linkindex="372" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=300">
+ 
+ research on possible integration with easyb
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_305" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',305)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="373" href="http://code.google.com/p/aost/issues/detail?id=305">305</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(305)"><a linkindex="374" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=305">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(305)"><a linkindex="375" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=305">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(305)"><a linkindex="376" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=305">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(305)"><a linkindex="377" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=305">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(305)"><a linkindex="378" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=305" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(305);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(305)" width="100%"><a linkindex="379" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=305">
+ 
+ Clean up Tellurium core code with new Groovy features in 0.7.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_306" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',306)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="380" href="http://code.google.com/p/aost/issues/detail?id=306">306</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(306)"><a linkindex="381" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=306">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(306)"><a linkindex="382" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=306">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(306)"><a linkindex="383" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=306">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(306)"><a linkindex="384" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=306">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(306)"><a linkindex="385" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=306" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(306);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(306)" width="100%"><a linkindex="386" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=306">
+ 
+ NEW RESTful APIs for Tellurium Engine?
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_325" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',325)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="387" href="http://code.google.com/p/aost/issues/detail?id=325">325</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(325)"><a linkindex="388" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=325">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(325)"><a linkindex="389" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=325">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(325)"><a linkindex="390" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=325">
+ 
+ Low
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(325)"><a linkindex="391" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=325">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(325)"><a linkindex="392" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=325" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(325);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(325)" width="100%"><a linkindex="393" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=325">
+ 
+ annotation support for Tellurium core
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_328" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',328)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="394" href="http://code.google.com/p/aost/issues/detail?id=328">328</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(328)"><a linkindex="395" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=328">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(328)"><a linkindex="396" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=328">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(328)"><a linkindex="397" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=328">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(328)"><a linkindex="398" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=328">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(328)"><a linkindex="399" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=328" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(328);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(328)" width="100%"><a linkindex="400" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=328">
+ 
+ avoid double json string when using bundle in Core 0.7.0 and Engine 0.1.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_330" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',330)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="401" href="http://code.google.com/p/aost/issues/detail?id=330">330</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(330)"><a linkindex="402" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=330">
+ 
+ Task
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(330)"><a linkindex="403" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=330">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(330)"><a linkindex="404" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=330">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(330)"><a linkindex="405" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=330">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(330)"><a linkindex="406" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=330" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(330);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(330)" width="100%"><a linkindex="407" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=330">
+ 
+ create a benchmark for the Bundle, i.e., Macro command
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_331" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',331)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="408" href="http://code.google.com/p/aost/issues/detail?id=331">331</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(331)"><a linkindex="409" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=331">
+ 
+ Enhancement
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(331)"><a linkindex="410" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=331">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(331)"><a linkindex="411" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=331">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(331)"><a linkindex="412" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=331">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(331)"><a linkindex="413" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=331" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(331);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(331)" width="100%"><a linkindex="414" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=331">
+ 
+ Use a JSON String as the alternative of the Tellurium configuration file
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this); cancelBubble=false;" class="cursor_off"><td class="vt rowwidgets" nowrap="nowrap"><input onclick="_checkRangeSelect(event, this)" id="cb_335" onmouseup="_highlightRow(this);" type="checkbox"><img title="Vote for this issue and get email change notifications" src="list_files/star_on.gif" onclick="_toggleStar(this,'aost',335)" height="15" width="15"></td>
+ 
+ 
+ 
+ <td class="vt id col_0"><a linkindex="415" href="http://code.google.com/p/aost/issues/detail?id=335">335</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_1" onclick="if (!cancelBubble) _goIssue(335)"><a linkindex="416" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=335">
+ 
+ Defect
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_2" onclick="if (!cancelBubble) _goIssue(335)"><a linkindex="417" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=335">
+ 
+ Accepted
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_3" onclick="if (!cancelBubble) _goIssue(335)"><a linkindex="418" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=335">
+ 
+ Medium
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_4" onclick="if (!cancelBubble) _goIssue(335)"><a linkindex="419" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=335">
+ ----
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_5" onclick="if (!cancelBubble) _goIssue(335)"><a linkindex="420" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=335" style="white-space: nowrap;">
+ 
+ John.Jian.Fang
+ 
+
+</a></td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="vt col_6" onclick="_goIssue(335);" style="padding-right: 0pt; padding-top: 0.15em;" valign="top" align="right">
+ <small><b>›</b></small>
+ </td>
+ <td class="vt col_6" onclick="if (!cancelBubble) _goIssue(335)" width="100%"><a linkindex="421" onclick="cancelBubble=true" href="http://code.google.com/p/aost/issues/detail?id=335">
+ 
+ consider multiple key combination when handling key events for new Tellurium API in Engine 0.1.0
+ 
+
+</a>
+ 
+
+
+ </td>
+ 
+ 
+ 
+ 
+ <td>&nbsp;</td>
+ </tr>
+ 
+
+
+ 
+ </tbody>
+ </table>
+ 
+ <div class="bub-bottom" style="font-size: small;">
+ 
+ <a linkindex="422" href="http://code.google.com/p/aost/issues/csv" style="float: right; margin-left: 1em;">CSV</a>
+
+ 
+ <div class="pagination">
+ 
+ 1 - 58
+ of 58
+ 
+ </div>
+ 
+
+
+</div>
+&nbsp;&nbsp;
+
+ 
+
+ 
+ <div id="pop_0" class="popup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortUp('id')"><td>Sort Up</td></tr>
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortDown('id')"><td>Sort Down</td></tr>
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(0)"><td>Hide Column</td></tr>
+ </tbody></table>
+ </div>
+ 
+
+ 
+ 
+ <div id="pop_1" class="popup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortUp('type')"><td>Sort Up</td></tr>
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortDown('type')"><td>Sort Down</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);" onmouseout="_rowRolloverOff(this)"><td onmouseover="_showRight('filter_1', this)">Show only
+ <span class="indicator">►</span></td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(1)"><td>Hide Column</td></tr>
+ 
+ </tbody></table>
+ </div>
+ 
+ 
+
+ 
+ 
+ <div id="pop_2" class="popup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortUp('status')"><td>Sort Up</td></tr>
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortDown('status')"><td>Sort Down</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);" onmouseout="_rowRolloverOff(this)"><td onmouseover="_showRight('filter_2', this)">Show only
+ <span class="indicator">►</span></td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(2)"><td>Hide Column</td></tr>
+ 
+ </tbody></table>
+ </div>
+ 
+ 
+
+ 
+ 
+ <div id="pop_3" class="popup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortUp('priority')"><td>Sort Up</td></tr>
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortDown('priority')"><td>Sort Down</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);" onmouseout="_rowRolloverOff(this)"><td onmouseover="_showRight('filter_3', this)">Show only
+ <span class="indicator">►</span></td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(3)"><td>Hide Column</td></tr>
+ 
+ </tbody></table>
+ </div>
+ 
+ 
+
+ 
+ 
+ <div id="pop_4" class="popup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortUp('milestone')"><td>Sort Up</td></tr>
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortDown('milestone')"><td>Sort Down</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(4)"><td>Hide Column</td></tr>
+ 
+ </tbody></table>
+ </div>
+ 
+ 
+
+ 
+ 
+ <div id="pop_5" class="popup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortUp('owner')"><td>Sort Up</td></tr>
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortDown('owner')"><td>Sort Down</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);" onmouseout="_rowRolloverOff(this)"><td onmouseover="_showRight('filter_5', this)">Show only
+ <span class="indicator">►</span></td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(5)"><td>Hide Column</td></tr>
+ 
+ </tbody></table>
+ </div>
+ 
+ 
+
+ 
+ 
+ <div id="pop_6" class="popup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortUp('summary')"><td>Sort Up</td></tr>
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_sortDown('summary')"><td>Sort Down</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this);_closeSubmenus()" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(6)"><td>Hide Column</td></tr>
+ </tbody></table>
+ </div>
+ 
+ 
+
+
+ <div id="filter_0" class="popup subpopup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ 
+ </table>
+ </div>
+
+ <div id="filter_1" class="popup subpopup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ 
+ <tbody><tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('type','Defect');">
+ <td>Defect</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('type','Enhancement');">
+ <td>Enhancement</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('type','Task');">
+ <td>Task</td></tr>
+ 
+ </tbody></table>
+ </div>
+
+ <div id="filter_2" class="popup subpopup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ 
+ <tbody><tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('status','Accepted');">
+ <td>Accepted</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('status','New');">
+ <td>New</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('status','Started');">
+ <td>Started</td></tr>
+ 
+ </tbody></table>
+ </div>
+
+ <div id="filter_3" class="popup subpopup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ 
+ <tbody><tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('priority','Critical');">
+ <td>Critical</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('priority','High');">
+ <td>High</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('priority','Low');">
+ <td>Low</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('priority','Medium');">
+ <td>Medium</td></tr>
+ 
+ </tbody></table>
+ </div>
+
+ <div id="filter_4" class="popup subpopup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ 
+ </table>
+ </div>
+
+ <div id="filter_5" class="popup subpopup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ 
+ <tbody><tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('owner','John.Jian.Fang');">
+ <td>John.Jian.Fang</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('owner','ajay.ravichandran');">
+ <td>ajay.ravichandran</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('owner','gigix1980');">
+ <td>gigix1980</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('owner','haroonzone');">
+ <td>haroonzone</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('owner','hvram1');">
+ <td>hvram1</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('owner','koryak');">
+ <td>koryak</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('owner','matt.senter');">
+ <td>matt.senter</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('owner','rsrams');">
+ <td>rsrams</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_filterTo('owner','vivekmongolu');">
+ <td>vivekmongolu</td></tr>
+ 
+ </tbody></table>
+ </div>
+
+ <div id="filter_6" class="popup subpopup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ 
+ </table>
+ </div>
+
+<div id="pop__dot" class="popup">
+ <table border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr><th>Show columns:</th></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(0)"><td>&nbsp;<span class="col_0">♦</span>&nbsp;ID</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(1)"><td>&nbsp;<span class="col_1">♦</span>&nbsp;Type</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(2)"><td>&nbsp;<span class="col_2">♦</span>&nbsp;Status</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(3)"><td>&nbsp;<span class="col_3">♦</span>&nbsp;Priority</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(4)"><td>&nbsp;<span class="col_4">♦</span>&nbsp;Milestone</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(5)"><td>&nbsp;<span class="col_5">♦</span>&nbsp;Owner</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);_toggleColumnUpdate(6)"><td>&nbsp;<span class="col_6">♦</span>&nbsp;Summary</td></tr>
+ 
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('Attachments')"><td>&nbsp;&nbsp;&nbsp;&nbsp;Attachments</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('Stars')"><td>&nbsp;&nbsp;&nbsp;&nbsp;Stars</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('Opened')"><td>&nbsp;&nbsp;&nbsp;&nbsp;Opened</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('Closed')"><td>&nbsp;&nbsp;&nbsp;&nbsp;Closed</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('Modified')"><td>&nbsp;&nbsp;&nbsp;&nbsp;Modified</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('BlockedOn')"><td>&nbsp;&nbsp;&nbsp;&nbsp;BlockedOn</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('Blocking')"><td>&nbsp;&nbsp;&nbsp;&nbsp;Blocking</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('Blocked')"><td>&nbsp;&nbsp;&nbsp;&nbsp;Blocked</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('MergedInto')"><td>&nbsp;&nbsp;&nbsp;&nbsp;MergedInto</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('Reporter')"><td>&nbsp;&nbsp;&nbsp;&nbsp;Reporter</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this);addcol('Cc')"><td>&nbsp;&nbsp;&nbsp;&nbsp;Cc</td></tr>
+ 
+ <tr onmouseover="_rowRolloverOn(this)" onmouseout="_rowRolloverOff(this)" onclick="_closeAllPopups(this); document.getElementById('columnspec').style.display=''; return true;"><td>&nbsp;&nbsp;&nbsp;&nbsp;Edit&nbsp;column&nbsp;spec...</td></tr>
+ </tbody></table>
+</div>
+
+ 
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+</div>
+</div>
+<div id="helparea"></div>
+<script type="text/javascript" src="list_files/dit_scripts_20081013.js"></script>
+
+
+ <script type="text/javascript">
+ 
+ var cancelBubble = false;
+ var _allColumnNames = [
+ 'id', 'type', 'status', 'priority', 'milestone', 'owner', 'summary'
+ ];
+ 
+ function addcol(colname) {
+ var colspec = _getColspec();
+ colspec.value = colspec.value + ' ' + colname;
+ document.getElementById('colspecform').submit();
+ }
+ 
+ var allImages = document.images;
+ for (var i=0; i<allImages.length; i++) {
+ var img = allImages[i];
+ if (img.src.indexOf("/images/star_") != -1) {
+ img.title='Vote for this issue and get email change notifications';
+ }
+ }
+ 
+ var last_selected_row = undefined;
+ // Return true if an event had the shift-key pressed.
+ function _hasShiftKey(evt) {
+ evt = (evt) ? evt : (window.event) ? window.event : '';
+ if (evt) {
+ if (evt.modifiers) {
+ return evt.modifiers & Event.SHIFT_MASK;
+ } else {
+ return evt.shiftKey;
+ }
+ }
+ return false;
+ }
+ // Select one row: check the checkbox and use highlight color.
+ function _rangeSelectRow(row, checked) {
+ if (!row) return;
+ row.className = checked ? 'selected' : '';
+ var td = row.firstChild;
+ while (td && td.tagName != 'TD') td = td.nextSibling;
+ if (!td) return;
+ var cb = td.firstChild;
+ while (cb && cb.tagName != 'INPUT') cb = cb.nextSibling;
+ if (!cb) return;
+ cb.checked = checked;
+ }
+ // If the user shift-clicked a checkbox, (un)select a range.
+ function _checkRangeSelect(evt, el) {
+ var clicked_row = el.parentNode.parentNode.rowIndex;
+ if (clicked_row == last_selected_row) return;
+ if (_hasShiftKey(evt) && last_selected_row != undefined) {
+ var results_table = document.getElementById('resultstable');
+ var delta = (clicked_row > last_selected_row) ? 1 : -1;
+ for (var i = last_selected_row; i != clicked_row; i += delta) {
+ _rangeSelectRow(results_table.rows[i], el.checked);
+ }
+ }
+ last_selected_row = clicked_row;
+ }
+ 
+ 
+ _ctx_args = "";
+ function MakeIssueLink(issueId) {
+ var url = 'detail?id=' + issueId;
+ return url + _ctx_args;
+ }
+ function _goIssue(issueId) {
+ return _go(MakeIssueLink(issueId));
+ }
+ var issueIds = [
+ 99,100,106,116,118,138,142,144,145,146,152,154,181,194,196,200,201,205,207,215,217,218,223,228,231,234,235,238,239,244,249,250,254,257,258,260,266,270,273,276,280,284,285,286,287,291,292,293,296,299,300,305,306,325,328,330,331,335
+ ];
+ function SetRowLinks() {
+ _ctx_args = _formatContextQueryArgs(
+ 2, "",
+ "", "ID Type Status Priority Milestone Owner Summary",
+ 0, 100, 100);
+ var table = document.getElementById('resultstable');
+ for (var r=1; r < table.rows.length; r++) {
+ var h = MakeIssueLink(issueIds[r - 1]);
+ var row = table.rows[r];
+ for (var c = 0; c < row.cells.length; c++) {
+ var cell = row.cells[c];
+ for (var a = cell.firstChild; a; a = a.nextSibling) {
+ if (a.tagName == 'A') {
+ a.href = h;
+ break; // skip labels
+ }
+ }
+ }
+ }
+ }
+ SetRowLinks();
+ function _toggleColumnUpdate(colIndex) {
+ var shownCols = _getColspec().value.split(' ');
+ var filteredCols = [];
+ for (var i=0; i< shownCols.length; i++) {
+ if (_allColumnNames[colIndex] != shownCols[i].toLowerCase()) filteredCols.push(shownCols[i]);
+ }
+ _getColspec().value = filteredCols.join(' ');
+ _getSearchColspec().value = filteredCols.join(' ');
+ _toggleColumn('hide_col_' + colIndex);
+ SetRowLinks();
+ }
+ _onload();
+</script>
+<script type="text/javascript" src="list_files/kibbles-1.js"></script>
+<script type="text/javascript">
+ _setupKibblesOnListPage(
+ '/p/aost/issues/list',
+ '/p/aost/issues/entry',
+ 'aost', 2, 0);
+</script>
+
+
+ 
+ <script type="text/javascript" src="list_files/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="list_files/codesite_product_dictionary_ph.js"></script>
+ 
+ 
+ 
+ 
+ 
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ ©2009 Google -
+ <a linkindex="423" href="http://code.google.com/">Code Home</a> -
+ <a linkindex="424" href="http://code.google.com/projecthosting/terms.html">Terms of Service</a> -
+ <a linkindex="425" href="http://www.google.com/privacy.html">Privacy Policy</a> -
+ <a linkindex="426" href="http://code.google.com/more/">Site Directory</a> -
+ <a linkindex="427" href="http://code.google.com/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+<script type="text/javascript">
+/**
+ * Reports analytics.
+ * It checks for the analytics functionality (window._gat) every 100ms
+ * until the analytics script is fully loaded in order to invoke siteTracker.
+ */
+function _CS_reportAnalytics() {
+ window.setTimeout(function() {
+ if (window._gat) {
+ try {
+ siteTracker = _gat._getTracker(CS_ANALYTICS_ACCOUNT);
+ siteTracker._trackPageview();
+ } catch (e) {}
+ var projectTracker = _gat._getTracker("UA-6979282-1");
+projectTracker._initData();
+projectTracker._trackPageview();
+ } else {
+ _CS_reportAnalytics();
+ }
+ }, 100);
+}
+</script>
+
+ 
+ 
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Hosted by</span>
+ <a linkindex="428" href="http://code.google.com/hosting/">
+ <img src="list_files/google_code_tiny.png" alt="Google Code" height="24" width="107">
+ </a>
+ </div>
+ 
+ 
+ 
+ 
+
+
+ 
+ <div style="display: none;" id="menuDiv-projects-dropdown" class="menuDiv instance0"><b style="display: block;" class="categoryTitle projects">Projects</b><div class="menuCategory projects"><a href="http://code.google.com/p/aost/" style="display: block;" class="menuItem">aost</a><a href="http://code.google.com/p/jianwikis/" style="display: block;" class="menuItem">jianwikis</a><a href="http://code.google.com/p/opensanguo/" style="display: block;" class="menuItem">opensanguo</a><a href="http://code.google.com/p/osomit/" style="display: block;" class="menuItem">osomit</a><a href="http://code.google.com/p/ppcast/" style="display: block;" class="menuItem">ppcast</a><a href="http://code.google.com/p/sacct/" style="display: block;" class="menuItem">sacct</a><a href="http://code.google.com/p/telluriumdoc/" style="display: block;" class="menuItem">telluriumdoc</a></div><b style="display: block;" class="categoryTitle starred_projects">Starred projects</b><div class="menuCategory starred_projects"><a href="http://code.google.com/p/aost/" style="display: block;" class="menuItem">aost</a><a href="http://code.google.com/p/opensanguo/" style="display: block;" class="menuItem">opensanguo</a><a href="http://code.google.com/p/osomit/" style="display: block;" class="menuItem">osomit</a><a href="http://code.google.com/p/ppcast/" style="display: block;" class="menuItem">ppcast</a><a href="http://code.google.com/p/sacct/" style="display: block;" class="menuItem">sacct</a><a href="http://code.google.com/p/telluriumdoc/" style="display: block;" class="menuItem">telluriumdoc</a></div><div class="menuCategory controls"><hr class="menuSeparator"><a href="http://code.google.com/more/" style="display: block;" class="menuItem">Find developer products...</a><a href="http://code.google.com/hosting/" style="display: block;" class="menuItem">Find open source projects...</a></div></div></body></html>

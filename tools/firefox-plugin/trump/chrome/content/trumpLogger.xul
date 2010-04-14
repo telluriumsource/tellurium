@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window id="trumpLogger" 
+    title="TrUMP Log Window"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    width="750" height="450"
+    onload="">
+    <stringbundle id="strings" src="chrome://trump/locale/string.properties"/>
+    <script type="application/x-javascript" src="chrome://trump/content/trumpBrowser.js"/>
+    
+    <textbox id="uiModelText" style="font-family:arial; font-size:12px;" multiline="true" wrap="true" flex="1"/>
+
+</window>

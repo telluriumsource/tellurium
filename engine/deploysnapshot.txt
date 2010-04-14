@@ -1,0 +1,2 @@
+ mvn deploy:deploy-file -Dfile=lib/selenium-server.jar -Durl=http://maven.kungfuters.org/content/repositories/snapshots -DgroupId=org.seleniumhq.selenium.server -DartifactId=selenium-server -Dversion=1.0.1-te3-SNAPSHOT -Dpackaging=jar -DrepositoryId=kungfuters-public-snapshots-repo
+

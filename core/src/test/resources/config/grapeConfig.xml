@@ -1,0 +1,27 @@
+<ivysettings>
+  <settings defaultResolver="downloadGrapes"/>
+  <property
+    name="local-maven2-pattern"
+    value="${user.home}/.m2/repository/[organisation]/[module]/[revision]/[module]-[revision](-[classifier]).[ext]"
+    override="false" />
+  <resolvers>
+    <chain name="downloadGrapes">
+      <filesystem name="cachedGrapes">
+        <ivy pattern="${user.home}/.groovy/grapes/[organisation]/[module]/ivy-[revision].xml"/>
+        <artifact pattern="${user.home}/.groovy/grapes/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]"/>
+      </filesystem>
+      <filesystem name="local-maven-2" m2compatible="true" local="true">
+        <ivy pattern="${local-maven2-pattern}"/>
+        <artifact pattern="${local-maven2-pattern}"/>
+      </filesystem>
+      <!-- todo add 'endorsed groovy extensions' resolver here -->
+      <ibiblio name="kungfuters.3rdparty" root="http://maven.kungfuters.org/content/repositories/thirdparty/" m2compatible="true"/>
+      <ibiblio name="codehaus" root="http://repository.codehaus.org/" m2compatible="true"/>
+      <ibiblio name="ibiblio" m2compatible="true"/>
+      <ibiblio name="java.net2" root="http://download.java.net/maven/2/" m2compatible="true"/>
+      <ibiblio name="openqa" root="http://archiva.openqa.org/repository/releases/" m2compatible="true"/>
+      <ibiblio name="kungfuters.snapshot" root="http://maven.kungfuters.org/content/repositories/snapshots/" m2compatible="true"/>
+      <ibiblio name="kungfuters.release" root="http://maven.kungfuters.org/content/repositories/releases/" m2compatible="true"/>
+    </chain>
+  </resolvers>
+</ivysettings>

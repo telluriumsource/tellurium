@@ -1,0 +1,15 @@
+<component>
+    <dependencySets>
+        <dependencySet>
+            <includes>
+                <include>tellurium:tellurium-udl</include>
+                <include>tellurium:tellurium-core</include>
+                <include>tellurium:tellurium-dojo-widget</include>
+                <include>tellurium:tellurium-extjs-widget</include>
+                <include>tellurium:tellurium-website</include>
+                <include>tellurium:ui-examples</include>
+            </includes>
+            <outputDirectory>modules</outputDirectory>
+        </dependencySet>
+    </dependencySets>
+</component>

@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>org.telluriumsource</groupId>
+		<artifactId>tellurium</artifactId>
+		<version>0.7.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>tellurium-reference-projects</artifactId>
+	<packaging>pom</packaging>
+	<name>Tellurium Reference Projects</name>
+	<description>Tellurium Reference Projects</description>
+	<scm>
+		<connection>scm:svn:http://aost.google.code.com/svn/trunk/reference-projects</connection>
+		<developerConnection>scm:svn:https://aost.googlecode.com/svn/trunk/reference-projects</developerConnection>
+		<url>http://aost.google.code.com/svn/trunk/reference-projects</url>
+	</scm>
+	<dependencies>
+		<dependency>
+			<groupId>${pom.groupId}</groupId>
+			<artifactId>tellurium-core</artifactId>
+			<version>${pom.version}</version>
+		</dependency>
+	</dependencies>
+	<modules>
+		<module>tellurium-website</module>
+        <module>ui-examples</module>
+        <module>benchmarks</module>
+	</modules>
+</project>

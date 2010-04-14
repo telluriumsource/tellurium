@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+
+<project name="tellurium-dojo-widget" default="dist" basedir=".">
+	                            
+	<property name="dir.project" value="${basedir}" />
+
+	<property file="build.properties" />
+
+	<property name="dir.source" value="${dir.project}/src" />
+	<property name="dir.source.tellurium" value="${dir.source}/main/groovy" />
+	<property name="dir.source.test" value="${dir.source}/test/groovy" />
+
+	<property name="dir.build" value="${dir.project}/out" />
+	<property name="dir.build.tellurium" value="${dir.build}/production" />
+	<property name="dir.build.test" value="${dir.build}/test" />
+
+	<property name="dir.lib" value="${dir.project}/lib" />
+
+	<property name="dir.dist" value="${dir.project}/dist" />
+
+	<path id="lib.path">
+		<fileset dir="${dir.lib}">
+			<include name="*.jar" />
+			<exclude name="*-src.jar" />
+			<include name="*.class" />
+		</fileset>
+	</path>
+
+	
+	<!-- Match runtime libraries -->
+	<patternset id="pattern.libs">
+		<include name="**/*.jar" />
+		<exclude name="**/*-src.jar"/>
+		<!--exclude name="**/*junit.jar"/-->
+	</patternset>
+
+	<!--taskdef resource="net/sf/antcontrib/antcontrib.properties"/-->
+
+	<path id="junit.classpath">
+		<fileset dir="${dir.lib}">
+			<include name="junit*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="tellurium.classpath">
+		<path refid="lib.path" />
+		<pathelement location="${dir.build.tellurium}" />
+	</path>
+
+	<path id="test.classpath">
+		<path refid="tellurium.classpath" />
+		<path refid="junit.classpath" />
+		<pathelement location="${dir.build.test}" />
+	</path>
+
+	<path id="project.classpath">
+		<path refid="test.classpath" />
+	</path>
+
+	<taskdef name="junit" classname="org.apache.tools.ant.taskdefs.optional.junit.JUnitTask" classpathref="junit.classpath" />
+
+	<target name="clean">
+		<echo message="Cleaning ..." />
+		<delete dir="${dir.build.tellurium}" />
+		<delete dir="${dir.build.test}" />
+		<delete dir="${dir.dist}" />
+	</target>
+
+
+    <!-- output the build environment -->
+    <target name="env" description="Outputs the build environment">
+        <tstamp>
+            <format property="time.formatted" pattern="MM/dd/yyyy hh:mm:ss a" unit="hour" />
+        </tstamp>
+        <echo message="--- BUILD ENVIRONMENT ---" />
+        <echo message="build time: ${time.formatted}" />
+        <echo message="ANT_HOME: ${env.ANT_HOME}" />
+    	<echo message="ant version: ${ant.version}" />
+        <echo message="JAVA_HOME: ${javahome}" />
+        <echo message="java version: ${java.version}" />
+    	<echo message="project path: ${basedir}" />
+    	<echo message="project name: ${ant.project.name}" />
+    	<echo message="project version: ${version}" />
+    	<echo message="source code revision: ${version}" />
+    </target>
+
+	<target name="init">
+		<echo message="Initializing project..." />
+		<tstamp>
+			<format property="time.formatted" pattern="MM/dd/yyyy hh:mm:ss a" unit="hour" />
+		</tstamp>
+		<mkdir dir="${dir.build}" />
+		<mkdir dir="${dir.build.tellurium}" />
+		<mkdir dir="${dir.build.test}" />
+    </target>
+
+    <macrodef name="compile-java">
+            <!-- required attributes -->
+            <attribute name="srcdir" />
+            <attribute name="destdir" />
+            <attribute name="excludes" default="" />
+
+            <!-- these defaults can be changed using properties -->
+            <attribute name="compiler" default="${javac.compiler}" />
+            <attribute name="debug" default="${javac.debug}" />
+            <attribute name="optimize" default="${javac.optimize}" />
+            <attribute name="deprecation" default="${javac.deprecation}" />
+            <attribute name="fork" default="${javac.fork}" />
+
+            <!-- these defaults can only be overridden explicitly by a task -->
+            <attribute name="encoding" default="UTF-8" />
+            <attribute name="includeAndRunTime" default="no" />
+            <attribute name="failonerror" default="false" />
+
+            <!-- this element sucks up all elements when the macro is used -->
+            <element name="javac-elements" implicit="yes" />
+
+            <!-- the macro body -->
+            <sequential>
+                    <javac srcdir="@{srcdir}"
+                            excludes="@{excludes}"
+                            destdir="@{destdir}" compiler="@{compiler}"
+                            debug="@{debug}"
+                            optimize="@{optimize}"
+                            deprecation="@{deprecation}"
+                            fork="@{fork}"
+                            encoding="@{encoding}" failonerror="@{failonerror}">
+                    </javac>
+            </sequential>
+    </macrodef>
+
+   <taskdef name="groovyc" 
+			classname="org.codehaus.groovy.ant.Groovyc"
+			classpathref="lib.path"
+			/>
+
+	<target name="compile-tellurium-dojo-widget" depends="init">
+		<echo message="Compiling java..." />
+		<groovyc srcdir="${dir.source.tellurium}"
+			destdir="${dir.build.tellurium}">
+			<classpath refid="lib.path" />
+           <!--javac source="1.5" target="1.5" debug="on" /-->
+        </groovyc>
+        <javac srcdir="${dir.source.tellurium}"
+            destdir="${dir.build.tellurium}">
+            <classpath refid="tellurium.classpath" />
+        </javac>
+	</target>
+
+
+	<target name="dist-init" depends="compile-tellurium-dojo-widget">
+		<mkdir dir="${dir.dist}" />
+	</target>
+
+	<target name="jar-tellurium-dojo-widget" depends="dist-init">
+		<jar destfile="${dir.dist}/tellurium-dojo-widget-${version}.jar">
+			<fileset dir="${dir.build.tellurium}"/>
+
+			<manifest>
+				<attribute name="Created-at" value="${time.formatted}" />
+				<attribute name="Created-by" value="${user.name}" />
+                <attribute name="Main-Class" value="org.telluriumsource.dsl.DslScriptExecutor"/>
+            </manifest>
+		</jar>
+	</target>
+
+	<target name="dist" depends="jar-tellurium-dojo-widget">
+		<echo message="Distribution created successfully." />
+	</target>
+
+	<target name="compile-test" depends="clean, compile-tellurium-dojo-widget">
+		<echo message="Compiling test.." />
+		<groovyc srcdir="${dir.source.test}" destdir="${dir.build.test}">
+			<classpath refid="tellurium.classpath" />
+			<include name="**" />
+		</groovyc>
+        <javac srcdir="${dir.source.test}"
+            destdir="${dir.build.test}">
+            <classpath refid="test.classpath" />
+        </javac>
+	</target>
+
+	<target name="run-unit-tests" depends="compile-test">
+		<junit fork="yes" forkmode="once" maxmemory="1024m"
+			printsummary="yes" errorProperty="test.failed" failureProperty="test.failed">
+			<classpath refid="project.classpath" />
+			<formatter type="brief" usefile="false" />
+			<formatter type="xml" />
+			<batchtest todir="${dir.build.test}">
+				<fileset dir="${dir.source.test}">
+					<include name="**/org/telluriumsource/widget/dojo/test/**"/>
+				</fileset>
+			</batchtest>
+		</junit>
+
+		<!--junitreport todir="${dir.build.test}">
+    		<fileset dir="${dir.build.test}">
+      			<include name="TEST-*.xml" />
+    		</fileset>
+    		<report todir="${dir.build.test}" />
+  		</junitreport-->
+
+		<fail if="test.failed" />
+	</target>
+
+</project>

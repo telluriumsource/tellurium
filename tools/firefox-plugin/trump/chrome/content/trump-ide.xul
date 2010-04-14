@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://trump/skin/trump.css" type="text/css"?>
+<?xul-overlay href="chrome://trump/content/trump-ide-common.xul"?>
+
+<!DOCTYPE window [
+<!ENTITY % trumpIdeDTD SYSTEM "chrome://trump/locale/trump-ide.dtd">
+%trumpIdeDTD;
+]>
+
+<window id="uiEditor"
+    title="&trump-ide.title;"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    width="620"
+    height="400"
+    onload="new Editor(window)"
+    onunload="window.editor.unload()"
+    onclose="return window.editor.close()">
+
+    <menubar id="sample-menubar">
+        <menu id="menu-file" label="File">
+          <menupopup id="file-popup">
+         <!--   <menuitem label="New"/>
+            <menuitem label="Open"/>
+            <menuitem label="Save"/> -->
+            <menuitem label="&exportUiModule.label;" oncommand="window.editor.exportUiModule();"/>  
+            <menuseparator/>
+            <menuitem label="Exit" oncommand="window.close()" />
+          </menupopup>
+        </menu>
+        <menu id="menu-options" label="Options">
+          <menupopup id="options-popup">
+             <menuitem label="&options.label;" oncommand="window.editor.updateOptions();"/>  
+          </menupopup>
+        </menu>
+        <menu id="menu-help" label="Help">
+          <menupopup id="edit-popup">
+            <menuitem label="Wiki"  oncommand="window.open('http://code.google.com/p/aost/w/list')" />
+            <menuitem label="Update"  oncommand="window.open('http://code.google.com/p/aost/downloads/list')" />
+            <menuitem label="Support"  oncommand="window.open('http://groups.google.com/group/tellurium-users')" />
+            <menuseparator/>
+            <menuitem label="About" oncommand="window.open('chrome://trump/content/trumpAbout.xul','trump_about','chrome,centerscreen,resizable')"/>
+          </menupopup>
+        </menu>
+      </menubar>
+    
+    
+    <toolbar id="toolbar2">
+      <toolbarbutton id="record-button" label="Record" class="record" tooltiptext="&recordButton.tooltip;" oncommand="window.editor.toggleRecordButton()" checked="true"/>
+      <toolbarbutton id="stop-button" label="Stop" class="icon" tooltiptext="&stopButton.tooltip;" oncommand="window.editor.toggleStopButton()"/>
+      <toolbarbutton id="generate-button" label="Generate" tooltiptext="&generate.tooltip;" oncommand="window.editor.generateButton()"/>
+      <toolbarbutton id="customize-button" label="Customize" tooltiptext="&customize.tooltip;" oncommand="window.editor.customizeButton()"/>
+      <toolbarbutton id="clear-button" label="Clear" tooltiptext="&clear.tooltip;" oncommand="window.editor.clearButton()"/>
+      <!--<toolbarbutton id="showLogs-button" label="Show Logs"  oncommand="showLogWindow();"/>-->
+    </toolbar>
+
+    <tabbox flex="3" height="300" width="250">
+        <tabs orient="horizontal" id="editorTabs">
+            <tab id="recordTab" label="&recordTab.label;" />
+            <!--<tab id="validateTab" label="&validateTab.label;" />-->
+            <tab id="sourceTab" label="&sourceTab.label;" />
+            <tab id="customizeTab" label="&customizeTab.label;" />
+            <!--<tab id="settingsTab" label="&settingsTab.label;" />-->
+        </tabs>
+        <tabpanels flex="1">
+            <tabpanel orient="vertical" flex="1">
+                <stack>
+                    <vbox flex="3">
+                        <tree id="recordTree" flex="1" rows="10" onselect="window.editor.selectedTreeItem()" hidecolumnpicker="true">
+                          <treecols>
+                            <treecol id="selectedElement" label="&element.label;" flex="1"/>
+                            <treecol id="selecetedElementName" label="&element.name.label;" flex="2"/>
+                          </treecols>
+                          <treechildren/>
+                        </tree>
+                    </vbox>
+                </stack>
+                <resizer dir="bottomright" height="2" style="cursor: se-resize;"/>
+           </tabpanel>
+            <!--
+            <tabpanel orient="vertical">
+              <textbox id="validate" multiline="true" flex="1"/>
+            </tabpanel>-->
+            <tabpanel orient="vertical">
+              <textbox id="source" multiline="true" wrap="off" flex="1"/>
+              <resizer dir="bottomright" height="2" style="cursor: se-resize;"/>  
+            </tabpanel>
+            <tabpanel orient="vertical">
+              <groupbox orient="horizontal" flex="1">
+                 <groupbox flex="1" class="border">
+                     <caption lable="UI" />
+                      <vbox id="customize_tree" datasources="#customize_tree_xml" ref="*" querytype="xml" flex="3"
+                            style="overflow: auto;">
+                            <!--caption label="UI Module"/-->
+                            <template>
+                                <query expr="*"/>
+                                <action>
+                                    <vbox uri="?" class="indent">
+                                        <hbox>
+                                            <button uid="?id" label="?desc" myclass="?class" align="left"
+                                                    oncommand="window.editor.processCustomizeEvent(event)"/>
+                                            <label value="?valid" align="left" style="color: red;"/>
+                                        </hbox>
+                                    </vbox>
+                                </action>
+                            </template>                    
+                        </vbox>
+                    </groupbox>
+                    <splitter collapse="after" ><grippy /></splitter>
+                    <groupbox flex="1" class="border">
+                        <caption lable="Selected DOM Element"/>
+                    <!--separator class="thin"/-->
+                    <!--splitter collapse="before" class="splitter" resizeafter="farthest"/-->
+                    <!-- command editing -->
+                        <vbox id="uiObjectEdit" flex="1" style="overflow: auto" minwidth="280">
+                            <hbox pack="center">
+                                <button label="&show.label;" oncommand="window.editor.showNodeOnWeb()"/>
+                                <button label="&save.label;" oncommand="window.editor.updateUiObject()"/>
+                            </hbox>
+
+                            <grid>
+                                <columns>
+                                    <column/>
+                                    <column flex="1"/>
+                                </columns>
+                                <rows>
+                                    <row align="center">
+                                        <!-- do drop down that depends upon the element type -->
+                                        <label control="commandAction" value="&uid.label;"/>
+                                        <textbox disabled="true" id="uid" oninput=""/>
+                                    </row>
+                                    <row align="center">
+                                        <!-- show different options collected by the client. Allow user to override -->
+                                        <label control="commandTarget" value="&type.label;"/>
+                                        <hbox flex="1">
+                                            <textbox flex="1" disabled="true" id="uiType" oninput=""/>
+
+                                        </hbox>
+                                    </row>
+                                    <row align="center">
+                                        <label control="commandValue" value="&group.label;"/>
+                                        <checkbox id="group_Check_Box" disabled="false" checked="false"/>
+                                    </row>
+                                    <row align="center">
+                                        <label control="commandValue" value="&attributes.label;"/>
+
+                                        <richlistbox id="ui_attribute_tree" datasources="#attributes_tree_xml" ref="*" querytype="xml" rows="10">
+                                            <listhead>
+                                                <listheader id="checkBoxId" label="" sort="?sel"/>
+                                                <listheader id="attributeName" primary="true" label="Name" sort="?name" flex="1"/>
+                                                <listheader id="attributeValue" label="Value" sort="?value" flex="1"/>
+                                            </listhead>
+                                            <listcols>
+                                                <listcol/>
+                                                <listcol flex="1"/>
+                                                <listcol flex="1"/>
+                                            </listcols>
+                                            <template>
+                                                <query expr="attribute">
+                                                    <assign var="?sel" expr="@sel"/>
+                                                    <assign var="?name" expr="@name"/>
+                                                    <assign var="?value" expr="@value"/>
+                                                    <assign var="?cid" expr="concat('CID',@name)"/>
+                                                    <assign var="?vid" expr="concat('VID',@name)"/>
+                                                </query>
+                                                <action>
+                                                    <richlistitem uri="?">
+                                                        <checkbox name="?cid" checked="?sel" align="center"
+                                                                  minwidth="10"/>
+                                                        <label value="?name" align="center" minwidth="50" flex="1"/>
+                                                        <textbox name="?vid" value="?value" oninput="" align="center"
+                                                                 minwidth="50" flex="1"/>
+                                                    </richlistitem>
+                                                </action>
+                                            </template>
+                                        </richlistbox>
+
+                                    </row>
+                                    <!--row align="center">
+                                    </row-->
+
+                                </rows>
+                            </grid>
+
+                        </vbox>
+                    </groupbox>
+              </groupbox>
+            </tabpanel>
+            <!-- <tabpanel orient="vertical">
+              <textbox id="settings" multiline="true" flex="1"/>
+            </tabpanel>-->
+        </tabpanels>
+    </tabbox>
+    <vbox id="logBox" height="100" flex="1">
+        <hbox id="logMenu" align="center">
+            <toolbarbutton id="logTab" label="&logConsole.label;"
+                           class="console-tab" selected="true"/>
+            <spacer flex="1"/>
+            <hbox align="center" id="logButtons">
+                <toolbarbutton id="logFilter" label="Debug" type="menu" class="console-button">
+                    <menupopup id="logFilterPopup"
+                               oncommand="window.editor.logView.changeLogLevel(event.target.value, true)">
+                        <menuitem label="&logFilter.debug.label;" value="0"/>
+                        <menuitem label="&logFilter.info.label;" value="1" selected="true"/>
+                        <menuitem label="&logFilter.warn.label;" value="2"/>
+                        <menuitem label="&logFilter.error.label;" value="3"/>
+                    </menupopup>
+                </toolbarbutton>
+                <toolbarbutton id="logClear" label="&logClear.label;"
+                               oncommand="window.editor.logView.clear()" class="console-button"/>
+            </hbox>
+        </hbox>
+        <hbox>
+            <spacer flex="0" width="15"/>
+            <iframe flex="1" id="logView" name="logViewFrame" src="LogFrame.html" height="100" width="235">
+            </iframe>
+        </hbox>
+    </vbox>
+</window>

@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <!--parent>
+        <groupId>org.telluriumsource</groupId>
+        <artifactId>tellurium-tools</artifactId>
+        <version>0.7.0-SNAPSHOT</version>
+    </parent-->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.telluriumsource</groupId>
+    <artifactId>tellurium-junit-archetype</artifactId>
+    <version>0.7.0-SNAPSHOT</version>
+    <name>Archetype - tellurium-junit-archetype</name>
+    <description>A Tellurium plugin for Firefox</description>
+    <scm>
+        <connection>scm:svn:http://aost.google.code.com/svn/trunk/tools/tellurium-junit-archetype</connection>
+        <developerConnection>scm:svn:https://aost.googlecode.com/svn/trunk/tools/tellurium-junit-archetype
+        </developerConnection>
+        <url>http://aost.google.code.com/svn/trunk/tools/tellurium-junit-archetype</url>
+    </scm>
+     <distributionManagement>
+		<downloadUrl>http://code.google.com/p/aost/downloads/list</downloadUrl>
+		<repository>
+			<id>kungfuters-public-releases-repo</id>
+			<name>Kungfuters.org Public Releases Repository</name>
+			<url>http://maven.kungfuters.org/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>kungfuters-public-snapshots-repo</id>
+			<name>Kungfuters.org Public Snapshot Repository</name>
+			<url>http://maven.kungfuters.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+         <site>
+             <id>tellurium-site</id>
+             <name>Tellurium Site</name>
+             <url>scp://telluriumsource.org/var/www/telluriumsource.org/public/maven</url>
+         </site>
+	</distributionManagement>
+
+</project>

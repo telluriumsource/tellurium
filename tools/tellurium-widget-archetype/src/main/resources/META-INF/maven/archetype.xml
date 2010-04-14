@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><archetype>
+  <id>tellurium-widget</id>
+  <resources>
+    <resource>src/main/groovy/org/telluriumsource/ui/widget/extjs/builder/DummyBuilder.groovy</resource>
+    <resource>src/main/groovy/org/telluriumsource/ui/widget/extjs/Init.groovy</resource>
+    <resource>src/main/groovy/org/telluriumsource/ui/widget/extjs/object/Dummy.groovy</resource>
+    <resource>src/main/groovy/org/telluriumsource/ui/widget/extjs/TelluriumWidget.groovy</resource>
+    <resource>TelluriumConfig.groovy</resource>
+    <resource>LICENSE.txt</resource>
+    <resource>README</resource>
+  </resources>
+  <testResources>
+    <resource>src/test/groovy/org/telluriumsource/ui/widget/extjs/test/DummyDemoTestCase.java</resource>
+    <resource>src/test/groovy/org/telluriumsource/ui/widget/extjs/module/DummyDemo.groovy</resource>
+  </testResources>
+</archetype>

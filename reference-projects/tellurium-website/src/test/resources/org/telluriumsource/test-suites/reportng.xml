@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Google Code Tests">
+   <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+
+	<test name="Downloads Page">
+        <classes>
+            <class name="org.telluriumsource.test.TelluriumDownloadsPageTestNGTestCase"></class>
+        </classes>
+	</test>
+
+ 	<test name="Project Page">
+         <classes>
+             <class name="org.telluriumsource.test.TelluriumProjectPageTestNGTestCase"></class>
+         </classes>
+	</test>
+
+ 	<test name="Wiki Page">
+         <classes>
+             <class name="org.telluriumsource.test.TelluriumWikiPageTestNGTestCase"></class>
+         </classes>
+	</test>
+</suite>

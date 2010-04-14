@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**" kind="src" output="core/target/classes" path="core/src/main/resources"/>
+	<classpathentry kind="src" output="reference-projects/tellurium-junit-java/target/classes" path="reference-projects/tellurium-junit-java/src/main/groovy"/>
+	<classpathentry kind="src" output="extensions/dojo-widget/target/classes" path="extensions/dojo-widget/src/main/groovy"/>
+	<classpathentry kind="src" output="reference-projects/tellurium-junit-java/target/classes" path="reference-projects/tellurium-junit-java/src/main/resources"/>
+	<classpathentry kind="src" output="extensions/dojo-widget/target/classes" path="extensions/dojo-widget/src/main/resources"/>
+	<classpathentry kind="src" output="extensions/dojo-widget/target/test-classes" path="extensions/dojo-widget/src/test/groovy"/>
+	<classpathentry kind="src" output="core/target/test-classes" path="core/src/test/groovy"/>
+	<classpathentry kind="src" output="core/target/classes" path="core/src/main/groovy"/>
+	<classpathentry excluding="**" kind="src" output="core/target/test-classes" path="core/src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.maven.ide.eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

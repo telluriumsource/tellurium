@@ -1,0 +1,38 @@
+<!ENTITY trump-ide.title "TrUMP IDE">
+
+<!ENTITY recordButton.tooltip "Record">
+<!ENTITY stopButton.tooltip "Stop">
+<!ENTITY generate.tooltip "Generate">
+<!ENTITY customize.tooltip "Customize">
+<!ENTITY clear.tooltip "Clear">
+
+<!ENTITY recordTab.label "Record">
+<!ENTITY customizeTab.label "Customize">
+<!ENTITY validateTab.label "Validate">
+<!ENTITY sourceTab.label "Source">
+<!ENTITY settingsTab.label "Settings">
+<!ENTITY element.label "DOM Node">
+<!ENTITY element.name.label "DOM Node Name">
+
+<!ENTITY uid.label "UID">
+<!ENTITY type.label "Type">
+<!ENTITY clocator.label "clocator">
+<!ENTITY attributes.label "Attributes">
+<!ENTITY group.label "Group">
+<!ENTITY save.label "Save">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY show.label "Show">
+<!ENTITY exportUiModule.label "Export">
+
+<!ENTITY options.label "Settings">
+<!ENTITY options.general.label "General">
+<!ENTITY options.directory.description "Export Directory">
+<!ENTITY options.jslog.description "Javascript Logging">
+<!ENTITY options.logwrap.description "Wrap Logging">
+
+<!ENTITY logConsole.label "Log">
+<!ENTITY logFilter.debug.label "Debug">
+<!ENTITY logFilter.info.label "Info">
+<!ENTITY logFilter.error.label "Error">
+<!ENTITY logFilter.warn.label "Warn">
+<!ENTITY logClear.label "Clear">

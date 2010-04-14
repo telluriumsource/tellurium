@@ -1,0 +1,21 @@
+<component>
+    <fileSets>
+        <fileSet>
+            <directory>${basedir}</directory>
+            <includes>
+                <include>README</include>
+                <include>LICENSE.txt</include>
+            </includes>
+            <outputDirectory></outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>${basedir}</directory>
+            <includes>
+                <include>rundsl.bat</include>
+                <include>rundsl.sh</include>
+                <include>rundsl.groovy</include>
+            </includes>
+            <outputDirectory>bin</outputDirectory>
+        </fileSet>
+    </fileSets>
+</component>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window [
+        <!ENTITY % trumpIdeDTD SYSTEM "chrome://trump/locale/trump-ide.dtd">
+        %trumpIdeDTD;
+]>
+
+<!-- Trump Preferences Window -->
+<prefwindow id="TrumpPreferences" buttons="accept,cancel" defaultButton="accept,cancel"
+            ondialogaccept="return saveOptions()"
+            onload="loadOptions()"
+            title="TrUMP IDE Options"
+            width="400"
+            height="450"
+            xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <!-- Create a new pane (tab) for Trump. -->
+    <prefpane id="trumpPrefPane" label="&options.general.label;">
+        <!--prefpane id="trumpPrefPane" label="&options.general.label;" onpaneload="populateTrump()"-->
+
+        <preferences>
+            <preference id="trumpExportDirectory" name="extensions.trump.exportdirectory" type="string"/>
+            <preference id="trumpJSLog" name="extensions.extensions.trump.jslog" type="bool"/>
+            <preference id="trumpLogWrap" name="extensions.extensions.trump.logWrap" type="bool"/>
+        </preferences>
+        
+        <script type="application/x-javascript" src="chrome://trump/content/options.js"/>
+        <script type="application/x-javascript" src="chrome://trump/content/preferences.js"/>
+        <script type="application/x-javascript" src="chrome://trump/content/extlib/log4js.js"/>
+        <script type="application/x-javascript" src="chrome://trump/content/trumpLogger.js"/>
+        <script type="application/x-javascript" src="chrome://trump/content/jslogger.js"/>
+
+        <stringbundle id="strings" src="chrome://trump/locale/string.properties"/>
+
+        <hbox align="center">
+            <textbox id="trump-options-directory" preference="trumpExportDirectory" multiline="false" oninput=""/>
+        </hbox>
+
+        <separator class="thin"/>
+
+        <description>&options.jslog.description;</description>
+        <hbox align="center">
+            <checkbox id="trump-option-jslog" preference="trumpJSLog" disabled="false" checked="true"/>
+        </hbox>
+
+        <separator class="thin"/>
+
+        <description>&options.logwrap.description;</description>
+        <hbox align="center">
+            <checkbox id="trump-option-logwrap" preference="trumpLogWrap" disabled="false" checked="false"/>
+        </hbox>
+        <hbox pack="center">
+          <!--button id="saveButton" label="&save.label;" oncommand="saveOptions();" /-->
+	        <!--button id="cancelButton" label="&cancel.label;" oncommand="cancelOptions();" /-->
+        </hbox>
+
+    </prefpane>
+
+</prefwindow>

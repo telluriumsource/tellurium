@@ -1,0 +1,2 @@
+ mvn install:install-file -Dfile=lib/selenium-server.jar  -DgroupId=org.seleniumhq.selenium.server -DartifactId=selenium-server -Dversion=1.0.1-te3 -Dpackaging=jar
+

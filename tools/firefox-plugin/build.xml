@@ -1,0 +1,29 @@
+<project name="trump" default="xpi" basedir=".">
+    
+    <property file="build.properties" />
+	<property name="src" location="trump"/>
+	<property name="dst" location="dist"/>
+	<tstamp>
+		<format property="time" pattern="yy.MM.dd_HHmm"/>
+	</tstamp>
+	<property name="dstFile" value="${dst}/TrUMP-${version}.xpi"/>
+
+    <target name="clean">
+		<echo message="Cleaning ..." />
+        <delete>
+            <fileset dir="${dst}" includes="*.xpi"/>
+        </delete>
+	</target>
+
+	<target name="xpi">
+		<zip update="true" compress="true"
+			comment="MyExtension development build"
+			destfile="${dstFile}"
+			basedir="${src}" excludes="trump.kpf"/>
+	</target>
+
+	<target name="dist" depends="xpi">
+		<echo message="Distribution created successfully." />
+	</target>
+
+</project>

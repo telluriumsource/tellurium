@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+
+<project name="tellurium-engine" default="update-selenium-server" basedir=".">
+	                            
+	<property name="dir.project" value="${basedir}" />
+
+	<property file="build.properties" />
+
+	<property name="dir.source" value="${dir.project}/src" />
+	<property name="dir.source.tellurium" value="${dir.source}/main/java" />
+	<property name="dir.source.test" value="${dir.source}/test/groovy" />
+
+	<property name="dir.build" value="${dir.project}/out" />
+	<property name="dir.build.tellurium" value="${dir.build}/production" />
+	<property name="dir.build.test" value="${dir.build}/test" />
+
+	<property name="dir.lib" value="${dir.project}/lib" />
+    <property name="dir.source.resources" value="${dir.source}/main/resources" />
+
+	<property name="dir.dist" value="${dir.project}/dist" />
+
+	<path id="lib.path">
+		<fileset dir="${dir.lib}">
+			<include name="*.jar" />
+			<exclude name="*-src.jar" />
+			<include name="*.class" />
+		</fileset>
+	</path>
+
+	
+	<!-- Match runtime libraries -->
+	<patternset id="pattern.libs">
+		<include name="**/*.jar" />
+		<exclude name="**/*-src.jar"/>
+		<!--exclude name="**/*junit.jar"/-->
+	</patternset>
+
+	<!--taskdef resource="net/sf/antcontrib/antcontrib.properties"/-->
+
+	<path id="junit.classpath">
+		<fileset dir="${dir.lib}">
+			<include name="junit*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="tellurium.classpath">
+		<path refid="lib.path" />
+		<pathelement location="${dir.build.tellurium}" />
+	</path>
+
+	<path id="test.classpath">
+		<path refid="tellurium.classpath" />
+		<path refid="junit.classpath" />
+		<pathelement location="${dir.build.test}" />
+	</path>
+
+	<path id="project.classpath">
+		<path refid="test.classpath" />
+	</path>
+
+	<target name="clean">
+		<echo message="Cleaning ..." />
+		<delete dir="${dir.build.tellurium}" />
+		<delete dir="${dir.build.test}" />
+		<delete dir="${dir.dist}" />
+	</target>
+
+
+    <!-- output the build environment -->
+    <target name="env" description="Outputs the build environment">
+        <tstamp>
+            <format property="time.formatted" pattern="MM/dd/yyyy hh:mm:ss a" unit="hour" />
+        </tstamp>
+        <echo message="--- BUILD ENVIRONMENT ---" />
+        <echo message="build time: ${time.formatted}" />
+        <echo message="ANT_HOME: ${env.ANT_HOME}" />
+    	<echo message="ant version: ${ant.version}" />
+        <echo message="JAVA_HOME: ${javahome}" />
+        <echo message="java version: ${java.version}" />
+    	<echo message="project path: ${basedir}" />
+    	<echo message="project name: ${ant.project.name}" />
+    	<echo message="project version: ${version}" />
+    	<echo message="source code revision: ${version}" />
+    </target>
+
+	<target name="init">
+		<echo message="Initializing project..." />
+		<tstamp>
+			<format property="time.formatted" pattern="MM/dd/yyyy hh:mm:ss a" unit="hour" />
+		</tstamp>
+		<mkdir dir="${dir.build}" />
+		<mkdir dir="${dir.build.tellurium}" />
+		<mkdir dir="${dir.build.test}" />
+    </target>
+
+
+    <target name="update-selenium-server" >
+		<jar destfile="${dir.lib}/selenium-server.jar"
+             basedir="${dir.source.resources}"
+             update="true" />
+	</target>
+
+</project>

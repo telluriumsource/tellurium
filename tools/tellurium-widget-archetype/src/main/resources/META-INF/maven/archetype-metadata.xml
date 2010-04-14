@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><archetype-descriptor name="tellurium-extjs-widget">
+  <fileSets>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/groovy</directory>
+      <includes>
+        <include>**/*.groovy</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/test/groovy</directory>
+      <includes>
+        <include>**/*.groovy</include>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>TelluriumConfig.groovy</include>
+        <include>LICENSE.txt</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>README</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>

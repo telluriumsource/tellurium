@@ -1,0 +1,34 @@
+<assembly>
+    <id>jar-with-dependencies</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>/</outputDirectory>
+            <unpack>true</unpack>
+            <scope>runtime</scope>
+            <excludes>
+                <!--exclude>junit:junit</exclude>
+                <exclude>org.testng:testng</exclude-->
+                <exclude>org.apache.ant:ant</exclude>
+                <exclude>org.apache.ant:ant-launcher</exclude>
+                <exclude>gmaven*.jar</exclude>
+                <exclude>plexus-utils*.jar</exclude>
+                <exclude>bcprov*.jar</exclude>
+                <exclude>qdox*.jar</exclude>
+                <exclude>slf4j-api*.jar</exclude>
+                <exclude>jline*.jar</exclude>
+            </excludes>
+            <!--includes>
+                <include>caja:json_simple</include>
+                <include>org.stringtree:stringtree-json</include>
+                <include>org.seleniumhq.selenium.server:selenium-server</include>
+                <include>org.seleniumhq.selenium.client-drivers:selenium-java-client-driver</include>
+                <include>org.openqa.selenium.grid:selenium-grid-tools</include>
+                <include>org.codehaus.groovy:groovy-all</include>
+            </includes-->
+        </dependencySet>
+    </dependencySets>
+</assembly>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://trump/skin/trump.css" type="text/css"?>
+        
+<overlay id="aostBroswerOverlay"
+          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="chrome://trump/content/trump.js"/>
+    <script type="application/x-javascript"><![CDATA[
+
+        var nodeState = {
+            currentNode : null,
+            debug : false,
+            bundle: null,
+
+            getCurrentNode : function() {
+                return this.currentNode;
+            }
+        }
+        
+        function showUIWindow() {
+            var clickedNode = gContextMenu.target;
+            nodeState.currentNode = clickedNode;
+            openUIModelWindow(clickedNode);
+        }
+
+        function showTrumpIDE(){
+            openTrumpIDEWindow();
+        }
+
+
+    ]]>
+    </script>
+
+    <!-- Extending Firefox Tools menu  -->
+    <!-- Adding TrUMP IDE to the tools menu -->
+    <menupopup id="menu_ToolsPopup">
+        <menuitem label="TrUMP IDE" oncommand="showTrumpIDE();"
+                  insertbefore="sanitizeSeparator,prefSep" accesskey="T" />
+    </menupopup>
+
+    <!-- Adding TrUMP to right click pop up menu -->
+    <popup id="contentAreaContextMenu">
+        <menuitem id="miShowTrUMP"
+                  oncommand="showUIWindow()"
+                  label="Show in TrUMP"
+                  tooltiptext="Show in Tellurium Ui Model Plugin (TrUMP)"
+                  accesskey="t"/>
+    </popup>
+
+</overlay>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+Copyright 2008 Vivek Mongolu
+
+-->
+
+<!DOCTYPE window [
+<!ENTITY % trumpIdeDTD SYSTEM "chrome://trump/locale/trump-ide.dtd">
+%trumpIdeDTD;
+]>
+<overlay id="trump-ide-common"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/x-javascript" src="chrome://trump/content/extlib/log4js.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/extlib/jquery-1.4.2.js "/>
+    <script type="application/x-javascript" src="chrome://trump/content/extlib/json2.js"/>
+
+    <script type="application/x-javascript" src="chrome://trump/content/util.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/editor.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/recorder.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/builder.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/tagObject.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/xpather.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/decorator.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/treeView.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/logView.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/trumpLogger.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/jslogger.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/preferences.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/options.js"/>
+
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/element.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/node.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/tree.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/uitype.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/uid.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/xpath.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/xpathComparator.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/xpathMatcher.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/tagState.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/xpathProcessor.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/filter.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/uiobject.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/locator.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/locatorStrategy.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/xpathBuilder.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/xpathDom.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/uicreator/jqueryBuilder.js"/>
+
+    <script type="application/x-javascript" src="chrome://trump/content/utils/stringBuffer.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/utils/hashMap.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/utils/priorityQueue.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/utils/xmlUtil.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/utils/fileUtil.js"/>
+    <script type="application/x-javascript" src="chrome://trump/content/utils/browserDetect.js"/>
+    
+</overlay>

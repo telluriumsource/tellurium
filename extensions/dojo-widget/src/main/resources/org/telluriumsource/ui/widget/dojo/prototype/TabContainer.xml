@@ -1,0 +1,68 @@
+<div widgetid="jtv_widget_JtvTabContainer_0_tablist"
+     class="dijitTabLabels-top dijitTabNoLayout liquidTabAlignTop"
+     id="jtv_widget_JtvTabContainer_0_tablist" role="wairole:tablist" wairole="tablist"
+     dojoattachevent="onkeypress:onkeypress">
+    <div class="dijitTab dijitTabChecked" widgetid="jtv_widget_JtvTabButton_0"
+         dojoattachevent="onclick:onClick,onmouseenter:_onMouse,onmouseleave:_onMouse">
+
+        <div class="dijitTabInnerDiv" dojoattachpoint="innerDiv">
+
+            <span pressed="true" style="-moz-user-select: none;" disabled="false" valuenow=""
+                  role="wairole:tab" tabindex="0" id="jtv_widget_JtvTabButton_0"
+                  dojoattachpoint="containerNode,focusNode">Recent
+            </span>
+
+            <span style="display: none;" dojoattachpoint="closeButtonNode" class="closeImage"
+                  dojoattachevent="onmouseenter:_onMouse, onmouseleave:_onMouse, onclick:onClickCloseButton"
+                  statemodifier="CloseButton">
+
+                <span dojoattachpoint="closeText" class="closeText">x</span>
+
+            </span>
+
+        </div>
+
+    </div>
+    <div class="dijitTab" widgetid="jtv_widget_JtvTabButton_1"
+         dojoattachevent="onclick:onClick,onmouseenter:_onMouse,onmouseleave:_onMouse">
+
+        <div class="dijitTabInnerDiv" dojoattachpoint="innerDiv">
+
+            <span style="-moz-user-select: none;" disabled="false" valuenow=""
+                  role="wairole:tab" tabindex="-1" id="jtv_widget_JtvTabButton_1"
+                  dojoattachpoint="containerNode,focusNode">Search
+            </span>
+
+            <span style="display: none;" dojoattachpoint="closeButtonNode" class="closeImage"
+                  dojoattachevent="onmouseenter:_onMouse, onmouseleave:_onMouse, onclick:onClickCloseButton"
+                  statemodifier="CloseButton">
+
+                <span dojoattachpoint="closeText" class="closeText">x</span>
+
+            </span>
+
+        </div>
+
+    </div>
+    <div class="dijitTab" widgetid="jtv_widget_JtvTabButton_2"
+         dojoattachevent="onclick:onClick,onmouseenter:_onMouse,onmouseleave:_onMouse">
+
+        <div class="dijitTabInnerDiv" dojoattachpoint="innerDiv">
+
+            <span style="-moz-user-select: none;" disabled="false" valuenow=""
+                  role="wairole:tab" tabindex="-1" id="jtv_widget_JtvTabButton_2"
+                  dojoattachpoint="containerNode,focusNode">Turntable
+            </span>
+
+            <span style="display: none;" dojoattachpoint="closeButtonNode" class="closeImage"
+                  dojoattachevent="onmouseenter:_onMouse, onmouseleave:_onMouse, onclick:onClickCloseButton"
+                  statemodifier="CloseButton">
+
+                <span dojoattachpoint="closeText" class="closeText">x</span>
+
+            </span>
+
+        </div>
+
+    </div>
+</div>

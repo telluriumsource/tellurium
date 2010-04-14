@@ -1,0 +1,32 @@
+<component>
+    <dependencySets>
+        <dependencySet>
+            <includes>
+                <include>tellurium:tellurium-core:jar:sources</include>
+            </includes>
+            <outputDirectory>src/core</outputDirectory>
+            <unpack>true</unpack>
+        </dependencySet>
+        <dependencySet>
+            <includes>
+                <include>tellurium:tellurium-dojo-widget:jar:sources</include>
+            </includes>
+            <outputDirectory>src/extensions/dojo-widget</outputDirectory>
+            <unpack>true</unpack>
+        </dependencySet>
+        <dependencySet>
+            <includes>
+                <include>tellurium:tellurium-extjs-widget:jar:sources</include>
+            </includes>
+            <outputDirectory>src/extensions/extjs-widget</outputDirectory>
+            <unpack>true</unpack>
+        </dependencySet>
+        <dependencySet>
+            <includes>
+                <include>tellurium:tellurium-website:jar:sources</include>
+            </includes>
+            <outputDirectory>src/reference-projects/tellurium-website</outputDirectory>
+            <unpack>true</unpack>
+        </dependencySet>
+    </dependencySets>
+</component>

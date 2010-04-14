@@ -1,0 +1,12 @@
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <baseDirectory>tellurium</baseDirectory>
+    <componentDescriptors>
+        <componentDescriptor>src/main/assembly/defaults.xml</componentDescriptor>
+        <componentDescriptor>src/main/assembly/modules.xml</componentDescriptor>
+    </componentDescriptors>
+</assembly>

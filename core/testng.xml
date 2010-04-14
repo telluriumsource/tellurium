@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" skipfailedinvocationCounts="false" verbose="1"  name="parallel_test" junit="false" parallel="methods" annotations="JDK" data-provider-thread-count="2">
+ <test name="parallel_test" junit="false" parallel="methods" annotations="JDK">
+   <classes>
+     <class name="UltraSimpleParallelTest">
+       <methods>
+         <include name="testOne"/>
+         <include name="testTwo"/>
+       </methods>
+     </class>
+   </classes>
+ </test>
+</suite>

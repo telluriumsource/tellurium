@@ -1,0 +1,107 @@
+                        Tellurium Test Project
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                Tellurium Team (TelluriumSource@Gmail.com)
+
+                    (http://code.google.com/p/aost)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This project is created by Tellurium Maven archetype, tellurium-junit-archetype.
+Tellurium provides two Maven archetypes, i.e., tellurium-junit-archetype and
+tellurium-testng-archetype for Tellurium JUnit test and Tellurium TestNG test,
+respectively.
+
+To create a new Tellurium JUnit test project, use the maven command
+
+mvn archetype:create -DgroupId=your_group_id -DartifactId=your_artifact_id
+    -DarchetypeArtifactId=tellurium-junit-archetype -DarchetypeGroupId=org.telluriumsource
+    -DarchetypeVersion=0.7.0-SNAPSHOT
+
+And for a new Tellurium TestNG test project, use
+
+mvn archetype:create -DgroupId=your_group_id -DartifactId=your_artifact_id
+    -DarchetypeArtifactId=tellurium-testng-archetype -DarchetypeGroupId=tellurium
+    -DarchetypeVersion=0.7.0-SNAPSHOT
+
+Before this, you must add Tellurium Maven repository into your_home/.m2/settings.xml
+
+<profiles>
+        <profile>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                 <repository>
+                    <id>kungfuters-public-snapshots-repo</id>
+                    <name>Kungfuters.org Public Snapshot Repository</name>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                    <url>http://maven.kungfuters.org/content/repositories/snapshots</url>
+                </repository>
+                <repository>
+                    <id>kungfuters-public-releases-repo</id>
+                    <name>Kungfuters.org Public Releases Repository</name>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <url>http://maven.kungfuters.org/content/repositories/releases</url>
+                </repository>
+            </repositories>
+        </profile>
+ </profiles>
+
+To create a new UI module, please use Tellurium Firefox plugin (TrUMP), which can be download
+from Tellurium project site at
+
+http://code.google.com/p/aost/downloads/list
+
+Choose the Firefox 2 or Firefox 3 version depending on your Firefox version. Or you can download
+the Firefox 3 version directly from Firefox addons site at
+
+https://addons.mozilla.org/en-US/firefox/addon/11035
+
+Once you install it and restart Firefox, you are ready to record your UI modules by simply clicking
+on the UI elements on the web and then click the "generate" button. You may like to customize your
+UI a bit by clicking the "Customize" button. More detailed TrUMP introductions can be found at
+
+http://code.google.com/p/aost/wiki/TrUMP
+
+and
+
+http://code.google.com/p/aost/wiki/HowTrUMPWorks
+
+Then, create a new Tellurium test case by extending TelluriumJavaTestCase or TelluriumTestNGTestCase.
+
+Run Tellurium tests from command line,
+
+mvn test
+
+If you have any problems, please post to Tellurium user group at
+
+http://groups.google.com/group/tellurium-users
+
+RESOURCES
+
+Tellurium Project Home
+http://code.google.com/p/aost/
+
+Tellurium User Group
+http://groups.google.com/group/tellurium-users
+
+Tellurium Developer Group
+http://groups.google.com/group/tellurium-developers
+
+Tellurium on Twitter
+http://twitter.com/TelluriumSource
+
+TelluriumSource
+http://telluriumsource.org

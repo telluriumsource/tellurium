@@ -1,0 +1,165 @@
+                        Tellurium Test Project
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                Tellurium Team (TelluriumSource@Gmail.com)
+
+                    (http://code.google.com/p/aost)
+                    
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This project is created by Tellurium Maven archetype, tellurium-testng-archetype.
+Tellurium provides two Maven archetypes, i.e., tellurium-junit-archetype and
+tellurium-testng-archetype for Tellurium JUnit test and Tellurium TestNG test,
+respectively.
+
+To create a new Tellurium JUnit test project, use the maven command
+
+mvn archetype:create -DgroupId=your_group_id -DartifactId=your_artifact_id
+    -DarchetypeArtifactId=tellurium-junit-archetype -DarchetypeGroupId=org.telluriumsource
+    -DarchetypeVersion=0.7.0-SNAPSHOT
+
+And for a new Tellurium TestNG test project, use
+
+mvn archetype:create -DgroupId=your_group_id -DartifactId=your_artifact_id
+    -DarchetypeArtifactId=tellurium-testng-archetype -DarchetypeGroupId=org.telluriumsource
+    -DarchetypeVersion=0.7.0-SNAPSHOT
+
+Before this, you must add Tellurium Maven repository into your_home/.m2/settings.xml
+
+<profiles>
+        <profile>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                 <repository>
+                    <id>kungfuters-public-snapshots-repo</id>
+                    <name>Kungfuters.org Public Snapshot Repository</name>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                    <url>http://maven.kungfuters.org/content/repositories/snapshots</url>
+                </repository>
+                <repository>
+                    <id>kungfuters-public-releases-repo</id>
+                    <name>Kungfuters.org Public Releases Repository</name>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <url>http://maven.kungfuters.org/content/repositories/releases</url>
+                </repository>
+            </repositories>
+        </profile>
+ </profiles>
+
+To create a new UI module, please use Tellurium Firefox plugin (TrUMP), which can be download
+from Tellurium project site at
+
+http://code.google.com/p/aost/downloads/list
+
+Choose the Firefox 2 or Firefox 3 version depending on your Firefox version. Or you can download
+the Firefox 3 version directly from Firefox addons site at
+
+https://addons.mozilla.org/en-US/firefox/addon/11035
+
+Once you install it and restart Firefox, you are ready to record your UI modules by simply clicking
+on the UI elements on the web and then click the "generate" button. You may like to customize your
+UI a bit by clicking the "Customize" button. More detailed TrUMP introductions can be found at
+
+http://code.google.com/p/aost/wiki/TrUMP
+
+and
+
+http://code.google.com/p/aost/wiki/HowTrUMPWorks
+
+Then, create a new Tellurium test case by extending TelluriumJavaTestCase or TelluriumTestNGTestCase.
+
+Run Tellurium tests from command line,
+
+mvn test
+
+If you have any problems, please post to Tellurium user group at
+
+http://groups.google.com/group/tellurium-users
+
+RESOURCES
+
+Tellurium Project Home
+http://code.google.com/p/aost/
+
+Tellurium User Group
+http://groups.google.com/group/tellurium-users
+
+Tellurium Developer Group
+http://groups.google.com/group/tellurium-developers
+
+Tellurium on Twitter
+http://twitter.com/TelluriumSource
+
+TelluriumSource
+http://telluriumsource.org
+
+NEWS
+
+    * 2010-04-05, Tellurium UID Description Language
+    * 2010-03-10, TelluriumSource.org is up and running
+    * 2010-03-04, Run Tellurium Integration Tests with Maven Cargo Plugin
+    * 2010-02-15, Disclose UI Module APIs in Tellurium 0.7.0.
+    * 2010-02-11, Tellurium 0.7.0 RC1 is Available Now
+    * 2010-02-10, Santa: The Tellurium UI Module Group Locating Algorithm
+    * 2010-02-08, Tellurium UI Module Visual Effect
+    * 2010-01-28, Tellurium is on Vimeo now.
+    * 2010-01-22, Added new wiki guide How to create your own Tellurium testing project with IntelliJ 9.0 Community Edition.
+    * 2010-01-15, What's New in Tellurium 0.7.0 is updated to track changes in 0.7.0.
+    * 2009-12-02, Tellurium was presented at Rich Web Experience 2009.
+    * 2009-11-22, Welcome Harihara Vinayakaram to our team.
+    * 2009-11-20, IRC Channel #tellurium is Available Now.
+    * 2009-10-10, Tellurium Facebook Group has been created and you are welcome to join.
+    * 2009-09-20, Special thanks to Davlyn Jones, the Tellurium user guide 0.6.0 is officially released now.
+    * 2009-09-18, Special thanks to Jared Rawlinson, Tellurium has a new project logo now.
+    * 2009-09-09, Please poll where did you find Tellurium.
+    * 2009-08-18, Welcome Kamal Ahmed to our team.
+    * 2009-08-15, Welcome Mahendra Kariya and Ajay Ravichandran to our team.
+    * 2009-07-27, The first draft of Tellurium User Guide is available now. You can download the pdf file from here.
+    * 2009-07-15, Welcome Kevin Zhang to our team.
+    * 2009-07-09, Welcome Davlyn Jones and Ramesh Ramamurthy to our team.
+    * 2009-06-26, Tellurium was presented at CodeStock 2009.
+    * 2009-06-26, Tellurium is on Twitter and Reddit now.
+    * 2009-06-24, Tellurium celebrates its first anniversary. Please read the article, Tellurium First Anniversary: Retrospect and Prospect.
+    * 2009-06-23, Added a video demo Tellurium beginner tutorial.
+    * 2009-06-21, Welcome Jeff Xiong to our Team.
+    * 2009-06-18, Tellurium 0.6.0 is released, please see the announcement.
+    * 2009-06-12, Tellurium creator, Dr. Jian Fang, was interviewed by InfoQ China.
+    * 2009-06-10, Tellurium Chinese Document project is created.
+    * 2009-05-13, Tellurium Core and reference projects 0.6.0 RC1 are out, Please see the announcement.
+    * 2009-05-10, Added Tellurium 0.6.0 feature introduction: Whats New in Tellurium 0.6.0
+    * 2009-04-28, Tellurium provides Selenium Grid support
+    * 2009-04-23, Tellurium Automated Testing Framework LinkedIn Group has been created and you are welcome to join.
+    * 2009-04-14, Tellurium starts to support jQuery selector.
+    * 2009-03-15, tutorial 10 Minutes to Tellurium is created and it includes a wiki page, presentation slides, and a screencast video.
+    * 2009-03-13, two Tellurium Maven archetypes are available, i.e., tellurium-junit-archetype and tellurium-testng-archetype for Tellurium JUnit and TestNG project, respectively.
+    * 2009-03-04, Tellurium UI Module Firefox Plugin (TrUMP) 0.1.0 is released
+    * 2009-02-18, Tellurium UI Module Firefox Plugin (TrUMP) 0.1.0 Release Candidate is available
+    * 2009-02-17, Tellurium Demo Videos are uploaded, you can use VLC media player to watch them
+    * 2009-01-29, Tellurium UI Module Firefox Plugin (TrUMP) 0.1.0 preview version is available
+    * 2008-12-03, Tellurium core 0.5.0 and reference projects are released
+    * 2008-12-02, Welcome Mikhail Koryak to our team.
+    * 2008-11-15, Tellurium 0.5.0 Release Candidate RC01 is out
+    * 2008-08-22, Welcome Haroon Rasheed to our team.
+    * 2008-08-13, Tellurium 0.4.0 is released and this release includes a lot of new features and enhancements such as data driven testing, framework configuration, and JUnit 4 support.
+    * 2008-07-29, The AOST framework is officially renamed to the Tellurium Automated Testing framework (Tellurium).
+    * 2008-07-29, Welcome Matt Senter to our team.
+    * 2008-07-18, Welcome Vivek Mongolu to our team.
+    * 2008-07-18, AOST user group is created. Please join and post your questions, comments, and suggestions there.
+    * 2008-07-12, AOST 0.3.0 is out and it comes with significant feature enhancement including Composite Locator, Group Locating Concept, and Multiple UI Modules in one DslContext?.
+    * 2008-07-02, UI Object ID is refactored to support nested UI objects.
+    * 2008-06-25, The AOST framework became public with version 0.2.0.
+    * 2008-01-01, the AOST framework second prototype was created.
+    * 2007-06-01, the AOST framework first prototype was created.

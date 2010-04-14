@@ -1,0 +1,2 @@
+ mvn deploy:deploy-file -Dfile=target/tellurium-core-0.7.0-SNAPSHOT.jar -Durl=http://maven.kungfuters.org/content/repositories/snapshots -DgroupId=tellurium -DartifactId=tellurium-core -Dversion=0.6.0-SNAPSHOT -Dpackaging=jar -DrepositoryId=kungfuters-public-snapshots-repo
+

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Tellurium Test Page</title>
+          <script src="js/selenium-mock.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/jquery-1.4.2.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/json2.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/utils.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-logging.js"></script> 
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-api.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-cache.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-extensions.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-selector.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uibasic.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-udl.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uiobj.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uimodule.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uisnapshot.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uialg.js"> </script>
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium-uiextra.js"> </script>    
+          <script src="http://localhost:4444/selenium-server/core/scripts/tellurium.js"> </script>
+          <script src="js/tellurium-test.js"> </script>
+          <script type="text/javascript">
+            teJQuery(document).ready(function(){
+                   var testcase = new TelluriumTestCase();
+                   testcase.testGeneralTableModule();
+            });
+          </script>
+</head>
+<body>
+<table id="xyz">
+    <tbody>
+    <tr>
+        <th>one</th>
+        <th>two</th>
+        <th>three</th>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+        <td>
+            <div class="abc">Profile</div>
+        </td>
+        <td><input class="123"/><br/>
+
+            <div class="someclass">
+                <span class="x">Framework</span><br/>
+                <a href="http://code.google.com/p/aost">Tellurium</a>
+            </div>
+        </td>
+        <td>
+            Hello World!
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+</body>
+</html>

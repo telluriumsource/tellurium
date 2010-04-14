@@ -1,0 +1,67 @@
+#record-button {
+    list-style-image: url("chrome://trump/skin/record_microphone.png");
+}
+
+#stop-button {
+    list-style-image: url("chrome://trump/skin/stop.png");
+}
+
+#source Pre {
+    white-space: normal; 
+}
+
+button[myclass="myClass0"] {
+     color: #0000FF;
+}
+
+button[myclass="myClass1"]{
+     color: #00CCCC;
+}
+                                                        
+button[myclass="myClass2"]{
+     color: #003366
+}
+
+button[myclass="myClass3"]{
+     color: #CC9933;
+}
+
+button[myclass="myClass4"]{
+     color: #00FF00
+}
+
+.titled-splitte{
+    background-color: #808080;
+    border-color:black;
+    border-style:solid;
+    border-width: thin;
+}
+
+#customize_tree{
+    overflow: auto;
+    margin-top: -2px;
+/*
+    border-top: 2px solid #999999;
+    border-right: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+    border-left: 2px solid #999999;
+*/
+    margin-left: -2px;
+}
+
+#uiObjectEdit{
+    overflow: scroll;
+    margin-top:2px;
+    /*
+    border-top: 2px solid #999999;
+    border-right: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+    border-left: 2px solid #999999;
+    */
+    margin-left: -2px;
+    height:180px;
+}
+
+.border{
+    border:1px black solid;
+}

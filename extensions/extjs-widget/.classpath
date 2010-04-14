@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="production" path="groovy"/>
+	<classpathentry kind="lib" path="/work/workspace/tellurium/extjs-widget/lib/groovy-all-1.5.6.jar"/>
+	<classpathentry kind="lib" path="/work/workspace/tellurium/extjs-widget/lib/junit-4.4.jar"/>
+	<classpathentry kind="lib" path="/work/workspace/tellurium/extjs-widget/lib/selenium-java-client-driver.jar"/>
+	<classpathentry kind="lib" path="/work/workspace/tellurium/extjs-widget/lib/selenium-server.jar"/>
+	<classpathentry kind="lib" path="/work/workspace/tellurium/extjs-widget/lib/tellurium-0.6.0.jar"/>
+	<classpathentry kind="con" path="/work/workspace/tellurium/extjs-widget/out/production"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.5.0_13"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

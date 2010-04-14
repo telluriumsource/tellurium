@@ -1,0 +1,7 @@
+content     trump   chrome/content/
+locale trump en-US chrome/locale/en-US/
+overlay chrome://browser/content/browser.xul chrome://trump/content/browserOverlay.xul
+
+skin trump classic/1.0 chrome/skin/
+style chrome://browser/content/browser.xul chrome://trump/skin/trump.css
+style chrome://global/content/customizeToolbar.xul chrome://trump/skin/trump.css
