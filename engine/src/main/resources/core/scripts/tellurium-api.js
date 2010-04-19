@@ -655,6 +655,8 @@ TelluriumApi.prototype.getEngineState = function(){
 
 TelluriumApi.prototype.getAllTableBodyText = function(uid) {
     var context = new WorkflowContext();
+    context.alg = this.cache.uiAlg;
+    
     var obj = this.cache.walkToUiObjectWithException(context, uid);
     if(obj.respondsToWithException("getAllBodyCell")){
         var out = obj.getAllBodyCell(context, this.textWorker);
